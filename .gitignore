@@ -14,3 +14,9 @@ logs/
 /.bash_logout
 /.bashrc
 /.profile
+.replit
+/package-lock.json
+package.json
+replit.nix
+/.config
+/.git
