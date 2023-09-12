@@ -1,22 +1,15 @@
-.usermin
-.spamassassin/
-.next/
-node_modules/
-.ssh
-Maildir/
-awstats/
-bin/
-cgi-bin/
-/etc/
-logs/
-/.awstats-htpasswd
-/.bash_history
-/.bash_logout
-/.bashrc
-/.profile
-.replit
-/package-lock.json
-package.json
-replit.nix
-/.config
-/.git
+# Ignore everything at root
+/*
+
+# Allow these directories
+!/public_html/
+!/domains/
+!.gitignore
+
+# Ignore node_modules and .next inside public_html
+/public_html/node_modules/
+/public_html/.next/
+
+# Ignore node_modules and .next inside domains
+/domains/node_modules/
+/domains/.next/
