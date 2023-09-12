@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "node --max-old-space-size=4096 ./node_modules/.bin/next dev",
     "build": "node --max-old-space-size=4096 ./node_modules/.bin/next build",
-    "start": "HOST=0.0.0.0 PORT=49600 node --max-old-space-size=4096 ./node_modules/.bin/next start",
+    "start": "node --max-old-space-size=4096 ./node_modules/.bin/next start",
     "lint": "node --max-old-space-size=4096 ./node_modules/.bin/next lint"
   },
   "keywords": [],
