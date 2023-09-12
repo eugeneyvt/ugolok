@@ -1,0 +1,16 @@
+.usermin
+.spamassassin/
+.next/
+node_modules/
+.ssh
+Maildir/
+awstats/
+bin/
+cgi-bin/
+/etc/
+logs/
+/.awstats-htpasswd
+/.bash_history
+/.bash_logout
+/.bashrc
+/.profile
