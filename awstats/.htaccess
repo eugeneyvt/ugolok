@@ -1,4 +1,0 @@
-AuthName "ugolok.shop statistics"
-AuthType Basic
-AuthUserFile /home/ugolok/.awstats-htpasswd
-require valid-user
