@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Media, Row } from "reactstrap";
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 import { useQuery } from "@apollo/client";
 
 const GET_PRODUCTS = gql`

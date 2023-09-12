@@ -151,7 +151,6 @@ const SpecialProducts = ({
     },
   });
 
-
   return (
     <div>
       <section className={designClass}>

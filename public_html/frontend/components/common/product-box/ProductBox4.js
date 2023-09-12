@@ -88,7 +88,8 @@ const ProductBox4 = ({ product, addToCompare, addCart, addWishlist }) => {
               data-toggle="modal"
               data-target="#quick-view"
               title="Quick View"
-              onClick={toggle}>
+              onClick={toggle}
+            >
               <i className="fa fa-search" aria-hidden="true"></i>
             </a>
 
@@ -100,7 +101,8 @@ const ProductBox4 = ({ product, addToCompare, addCart, addWishlist }) => {
             <button
               className="add-button add_cart"
               title="Add to cart"
-              onClick={() => addQty(product, quantity)}>
+              onClick={() => addQty(product, quantity)}
+            >
               add to cart
             </button>
             <div className={`qty-box cart_qty ${isOpen ? "open" : ""}`}>
@@ -111,7 +113,8 @@ const ProductBox4 = ({ product, addToCompare, addCart, addWishlist }) => {
                     className="btn quantity-left-minus"
                     onClick={() => minusProduct(quantity)}
                     data-type="minus"
-                    data-field="">
+                    data-field=""
+                  >
                     <i className="fa fa-angle-left"></i>
                   </button>
                 </span>
@@ -128,7 +131,8 @@ const ProductBox4 = ({ product, addToCompare, addCart, addWishlist }) => {
                     className="btn quantity-right-plus"
                     onClick={() => plusProduct(product, quantity)}
                     data-type="plus"
-                    data-field="">
+                    data-field=""
+                  >
                     <i className="fa fa-angle-right"></i>
                   </button>
                 </span>
@@ -149,7 +153,8 @@ const ProductBox4 = ({ product, addToCompare, addCart, addWishlist }) => {
         isOpen={modal}
         toggle={toggle}
         className="modal-lg quickview-modal"
-        centered>
+        centered
+      >
         <ModalHeader toggle={toggle}> </ModalHeader>
         <ModalBody>
           <Row>
@@ -184,7 +189,8 @@ const ProductBox4 = ({ product, addToCompare, addCart, addWishlist }) => {
                                   vari.image_id,
                                   product.images
                                 )
-                              }></li>
+                              }
+                            ></li>
                           );
                         })}
                       </ul>
@@ -224,7 +230,8 @@ const ProductBox4 = ({ product, addToCompare, addCart, addWishlist }) => {
                           className="btn quantity-left-minus"
                           onClick={minusQty}
                           data-type="minus"
-                          data-field="">
+                          data-field=""
+                        >
                           <i className="fa fa-angle-left"></i>
                         </button>
                       </span>
@@ -241,7 +248,8 @@ const ProductBox4 = ({ product, addToCompare, addCart, addWishlist }) => {
                           className="btn quantity-right-plus"
                           onClick={() => plusQty(product)}
                           data-type="plus"
-                          data-field="">
+                          data-field=""
+                        >
                           <i className="fa fa-angle-right"></i>
                         </button>
                       </span>
@@ -251,12 +259,14 @@ const ProductBox4 = ({ product, addToCompare, addCart, addWishlist }) => {
                 <div className="product-buttons">
                   <button
                     className="btn btn-solid"
-                    onClick={() => addCart(product, quantity)}>
+                    onClick={() => addCart(product, quantity)}
+                  >
                     add to cart
                   </button>
                   <button
                     className="btn btn-solid"
-                    onClick={clickProductDetail}>
+                    onClick={clickProductDetail}
+                  >
                     View detail
                   </button>
                 </div>

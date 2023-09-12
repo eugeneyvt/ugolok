@@ -3,7 +3,11 @@ import Slider from "react-slick";
 import { Media } from "reactstrap";
 
 const Home = () => {
-  const banners = ['/assets/images/christmas/home-banner/1.jpg', '/assets/images/christmas/home-banner/2.jpg', '/assets/images/christmas/home-banner/3.jpg'];
+  const banners = [
+    "/assets/images/christmas/home-banner/1.jpg",
+    "/assets/images/christmas/home-banner/2.jpg",
+    "/assets/images/christmas/home-banner/3.jpg",
+  ];
   const Banner = ({ img }) => {
     return (
       <div>

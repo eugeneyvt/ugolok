@@ -276,9 +276,9 @@ body {
 }
 
 @media (max-width: 1430px) and (min-width: 1200px) {
-  header{
-    .main-navbar{
-      #mainnav{
+  header {
+    .main-navbar {
+      #mainnav {
         .nav-menu > li > a {
           padding-right: 36px;
         }
@@ -286,8 +286,8 @@ body {
     }
   }
   .layout3-menu {
-    .absolute-logo{
-      .brand-logo{
+    .absolute-logo {
+      .brand-logo {
         margin-left: 80px;
       }
     }
@@ -723,7 +723,7 @@ body {
         .nav-menu {
           > li {
             > a {
-                color: $dark-font;
+              color: $dark-font;
             }
             &:hover {
               > a {
@@ -747,7 +747,7 @@ body {
                       content: "+";
                     }
                   }
-                } 
+                }
               }
             }
           }
@@ -761,7 +761,9 @@ body {
             li {
               a {
                 padding: 5px 35px;
-                &:active, &:focus, &.highlighted {
+                &:active,
+                &:focus,
+                &.highlighted {
                   padding: 5px 35px;
                 }
               }
@@ -1442,7 +1444,7 @@ body {
       }
     }
   }
-  .four-slider-skeleton  {
+  .four-slider-skeleton {
     > div {
       &:last-child {
         display: none;
@@ -1727,23 +1729,23 @@ body {
       margin-bottom: -50px;
     }
   }
-  .masonry-grid-col{
-    .isotopeSelector{
+  .masonry-grid-col {
+    .isotopeSelector {
       width: 33.33% !important;
     }
   }
-  .outsideImage{
+  .outsideImage {
     display: flex;
     flex-direction: column;
-    .imgae-outside-thumbnail{
+    .imgae-outside-thumbnail {
       order: -1;
     }
   }
-  .collection-wrapper{
-    .filter-col{
+  .collection-wrapper {
+    .filter-col {
       padding: 0;
-      .filter-main-btn{
-        span{
+      .filter-main-btn {
+        span {
           width: auto;
           border-radius: 0;
           font-size: 18px;
@@ -1757,12 +1759,13 @@ body {
       }
     }
   }
-  #filterpopup{
-    .theme-card, .collection-sidebar-banner{
+  #filterpopup {
+    .theme-card,
+    .collection-sidebar-banner {
       border: none;
     }
   }
-  .videoClass{
+  .videoClass {
     object-fit: none;
     overflow: unset;
     height: 100vh;
@@ -2454,7 +2457,7 @@ body {
       }
     }
   }
-  .four-slider-skeleton  {
+  .four-slider-skeleton {
     > div {
       &:nth-last-child(2) {
         display: none;
@@ -3042,8 +3045,8 @@ body {
       display: none;
     }
   }
-  .masonry-grid-col{
-    .isotopeSelector{
+  .masonry-grid-col {
+    .isotopeSelector {
       width: 50% !important;
     }
   }
@@ -5293,7 +5296,7 @@ body {
       margin: 10px 0;
       &:hover {
         background-color: unset;
-        h4{
+        h4 {
           color: $grey01;
         }
       }
@@ -5919,21 +5922,21 @@ body {
 }
 
 @media (max-width: 575px) {
-  .masonry-grid-col{
-    .isotopeSelector{
+  .masonry-grid-col {
+    .isotopeSelector {
       width: 100% !important;
     }
   }
-  .leftImage{
-    .order-down{
-      .slick-track{
+  .leftImage {
+    .order-down {
+      .slick-track {
         display: flex;
       }
     }
   }
-  .thumbnail-col{
-    .slick-vertical{
-      .slick-track{
+  .thumbnail-col {
+    .slick-vertical {
+      .slick-track {
         display: flex;
         margin: 0 10px;
       }
@@ -5942,14 +5945,14 @@ body {
 }
 
 @media (max-width: 480px) {
-  .setting-box{
+  .setting-box {
     width: 300px;
   }
-  .theme-modal.modal-dialog{
-    .modal-content{
-      .modal-body{
-        .modal-bg{
-          .btn-close{
+  .theme-modal.modal-dialog {
+    .modal-content {
+      .modal-body {
+        .modal-bg {
+          .btn-close {
             right: 20px;
             top: 20px;
           }
@@ -6464,9 +6467,9 @@ body {
 }
 
 @media (max-width: 420px) {
-  .footer-light{
-    .subscribe-form{
-      .form-control{
+  .footer-light {
+    .subscribe-form {
+      .form-control {
         width: 185px;
         padding: 7px 13px;
       }
@@ -7217,16 +7220,16 @@ body {
 }
 
 @media (max-width: 360px) {
-  .modal{
-    .modal-body{
-      .product-buttons{
+  .modal {
+    .modal-body {
+      .product-buttons {
         display: inline-block;
-        .btn{
-          &:first-child{
+        .btn {
+          &:first-child {
             display: block;
             margin-bottom: 5px;
           }
-          &:last-child{
+          &:last-child {
             margin: 0;
           }
         }

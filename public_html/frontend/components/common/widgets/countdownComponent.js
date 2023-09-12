@@ -12,29 +12,29 @@ const CountdownComponent = () => {
       // Render a countdown
       return (
         <div className="timer-box">
-            <div className="timer">
-              <div className="timer-p" id="demo">
-                <span>
-                  {days}
-                  <span className="padding-l">:</span>
-                  <span className="timer-cal">Days</span>
-                </span>
-                <span>
-                  {hours}
-                  <span className="padding-l">:</span>
-                  <span className="timer-cal">Hrs</span>
-                </span>
-                <span>
-                  {minutes}
-                  <span className="padding-l">:</span>
-                  <span className="timer-cal">Min</span>
-                </span>
-                <span>
-                  {seconds}
-                  <span className="timer-cal">Sec</span>
-                </span>
-              </div>
+          <div className="timer">
+            <div className="timer-p" id="demo">
+              <span>
+                {days}
+                <span className="padding-l">:</span>
+                <span className="timer-cal">Days</span>
+              </span>
+              <span>
+                {hours}
+                <span className="padding-l">:</span>
+                <span className="timer-cal">Hrs</span>
+              </span>
+              <span>
+                {minutes}
+                <span className="padding-l">:</span>
+                <span className="timer-cal">Min</span>
+              </span>
+              <span>
+                {seconds}
+                <span className="timer-cal">Sec</span>
+              </span>
             </div>
+          </div>
         </div>
       );
     }

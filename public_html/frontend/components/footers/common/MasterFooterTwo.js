@@ -3,7 +3,16 @@ import { Container, Row, Col, Collapse } from "reactstrap";
 import LogoImage from "../../headers/common/logo";
 import CopyRight from "./copyright";
 
-const MasterFooterTwo = ({ layoutClass, logoName, footerClass, footerSection, logoImg, footerLogoClass, btnGreen, myAccount }) => {
+const MasterFooterTwo = ({
+  layoutClass,
+  logoName,
+  footerClass,
+  footerSection,
+  logoImg,
+  footerLogoClass,
+  btnGreen,
+  myAccount,
+}) => {
   const [isOpen, setIsOpen] = useState();
   const [collapse, setCollapse] = useState(0);
   const width = window.innerWidth <= 767;
@@ -29,20 +38,37 @@ const MasterFooterTwo = ({ layoutClass, logoName, footerClass, footerSection, lo
             <section className={`section-b-space ${footerSection}`}>
               <Row className="footer-theme2">
                 <Col lg="3">
-                  <div className={`footer-title 	${isOpen && collapse == 1 ? "active" : ""}  footer-mobile-title`}>
+                  <div
+                    className={`footer-title 	${
+                      isOpen && collapse == 1 ? "active" : ""
+                    }  footer-mobile-title`}
+                  >
                     <h4
                       onClick={() => {
                         setCollapse(1);
                         setIsOpen(!isOpen);
-                      }}>
+                      }}
+                    >
                       about
                       <span className="according-menu"></span>
                     </h4>
                   </div>
-                  <Collapse isOpen={width ? (collapse === 1 ? isOpen : false) : true}>
+                  <Collapse
+                    isOpen={width ? (collapse === 1 ? isOpen : false) : true}
+                  >
                     <div className="footer-contant">
-                      <div className={`footer-logo ${footerLogoClass}`}>{logoImg ? <LogoImage logo={logoName} /> : <img src={logoName.src} alt="" />}</div>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                      <div className={`footer-logo ${footerLogoClass}`}>
+                        {logoImg ? (
+                          <LogoImage logo={logoName} />
+                        ) : (
+                          <img src={logoName.src} alt="" />
+                        )}
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et.Lorem
+                        ipsum dolor sit amet, consectetur adipiscing
+                      </p>
                     </div>
                   </Collapse>
                 </Col>
@@ -51,8 +77,18 @@ const MasterFooterTwo = ({ layoutClass, logoName, footerClass, footerSection, lo
                     <h2>newsletter</h2>
                     <form>
                       <div className="form-group">
-                        <input type="text" className="form-control" id="exampleFormControlInput3" placeholder="Enter your email" />
-                        <button type="submit" className={`btn btn-solid ${btnGreen ? "btn-green" : ""}`}>
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="exampleFormControlInput3"
+                          placeholder="Enter your email"
+                        />
+                        <button
+                          type="submit"
+                          className={`btn btn-solid ${
+                            btnGreen ? "btn-green" : ""
+                          }`}
+                        >
                           subscribe
                         </button>
                       </div>
@@ -60,17 +96,24 @@ const MasterFooterTwo = ({ layoutClass, logoName, footerClass, footerSection, lo
                   </div>
                 </Col>
                 <Col lg="3">
-                  <div className={`footer-title 	${isOpen && collapse == 2 ? "active" : ""} `}>
+                  <div
+                    className={`footer-title 	${
+                      isOpen && collapse == 2 ? "active" : ""
+                    } `}
+                  >
                     <h4
                       onClick={() => {
                         setCollapse(2);
                         setIsOpen(!isOpen);
-                      }}>
+                      }}
+                    >
                       store information
                       <span className="according-menu"></span>
                     </h4>
                   </div>
-                  <Collapse isOpen={width ? (collapse === 2 ? isOpen : false) : true}>
+                  <Collapse
+                    isOpen={width ? (collapse === 2 ? isOpen : false) : true}
+                  >
                     <div className="footer-contant">
                       <ul className="contact-details">
                         <li>Multikart Demo Store, Demo store India 345-659</li>
@@ -94,17 +137,26 @@ const MasterFooterTwo = ({ layoutClass, logoName, footerClass, footerSection, lo
                 <Row className="footer-theme2">
                   <Col className="p-set">
                     <div className="footer-link">
-                      <div className={`footer-title ${isOpen && collapse == 3 ? "active" : ""} `}>
+                      <div
+                        className={`footer-title ${
+                          isOpen && collapse == 3 ? "active" : ""
+                        } `}
+                      >
                         <h4
                           onClick={() => {
                             setCollapse(3);
                             setIsOpen(!isOpen);
-                          }}>
+                          }}
+                        >
                           my account
                           <span className="according-menu"></span>
                         </h4>
                       </div>
-                      <Collapse isOpen={width ? (collapse === 3 ? isOpen : false) : true}>
+                      <Collapse
+                        isOpen={
+                          width ? (collapse === 3 ? isOpen : false) : true
+                        }
+                      >
                         <div className="footer-contant">
                           <ul>
                             <li>
@@ -127,17 +179,26 @@ const MasterFooterTwo = ({ layoutClass, logoName, footerClass, footerSection, lo
                       </Collapse>
                     </div>
                     <div className="footer-link-b">
-                      <div className={`footer-title ${isOpen && collapse == 4 ? "active" : ""} `}>
+                      <div
+                        className={`footer-title ${
+                          isOpen && collapse == 4 ? "active" : ""
+                        } `}
+                      >
                         <h4
                           onClick={() => {
                             setCollapse(4);
                             setIsOpen(!isOpen);
-                          }}>
+                          }}
+                        >
                           why we choose
                           <span className="according-menu"></span>
                         </h4>
                       </div>
-                      <Collapse isOpen={width ? (collapse === 4 ? isOpen : false) : true}>
+                      <Collapse
+                        isOpen={
+                          width ? (collapse === 4 ? isOpen : false) : true
+                        }
+                      >
                         <div className="footer-contant">
                           <ul>
                             <li>

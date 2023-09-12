@@ -57,7 +57,7 @@ const TitlePage = () => {
       {MasterTitleData.map((data, index) => {
         return (
           <MasterTitle
-          key={index}
+            key={index}
             titleClass={data.titleClass}
             title={data.title}
             innerTitleClass={data.innerTitleClass}

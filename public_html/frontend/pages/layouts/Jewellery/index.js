@@ -18,12 +18,16 @@ const Jewellery = () => {
   useEffect(() => {
     document.documentElement.style.setProperty("--theme-deafult", "#5fcbc4");
   });
-  
+
   return (
     <Fragment>
       <Helmet>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/x-icon" href={"/assets/images/favicon/16.png"} />
+        <link
+          rel="icon"
+          type="image/x-icon"
+          href={"/assets/images/favicon/16.png"}
+        />
       </Helmet>
       <div className="bg_cls">
         <ModalComponent />

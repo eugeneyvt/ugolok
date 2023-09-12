@@ -7,7 +7,7 @@ import { Container, Row, Col, Media } from "reactstrap";
 
 const ReviewContent = [
   {
-    img: '/assets/images/avtar.jpg',
+    img: "/assets/images/avtar.jpg",
     name: "Mark Jecno",
     datetime: "12 Jannuary 2023 at 1:30AM",
     review:
@@ -16,7 +16,7 @@ const ReviewContent = [
     dislikes: "2",
   },
   {
-    img: '/assets/images/2.jpg',
+    img: "/assets/images/2.jpg",
     name: "Mark Jecno",
     datetime: "12 Jannuary 2023 at 1:30AM",
     review:
@@ -25,7 +25,7 @@ const ReviewContent = [
     dislikes: "2",
   },
   {
-    img: '/assets/images/20.jpg',
+    img: "/assets/images/20.jpg",
     name: "Mark Jecno",
     datetime: "12 Jannuary 2023 at 1:30AM",
     review:
@@ -34,7 +34,7 @@ const ReviewContent = [
     dislikes: "2",
   },
   {
-    img: '/assets/images/avtar.jpg',
+    img: "/assets/images/avtar.jpg",
     name: "Mark Jecno",
     datetime: "12 Jannuary 2023 at 1:30AM",
     review:
@@ -43,7 +43,7 @@ const ReviewContent = [
     dislikes: "2",
   },
   {
-    img: '/assets/images/2.jpg',
+    img: "/assets/images/2.jpg",
     name: "Mark Jecno",
     datetime: "12 Jannuary 2023 at 1:30AM",
     review:

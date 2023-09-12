@@ -404,8 +404,8 @@ const OrderSuccess2 = () => (
           background-color: #e2e2e2;
           display: block;
         }
-        .order-success2 .order-detail th{
-            text-align: left;
+        .order-success2 .order-detail th {
+          text-align: left;
         }
         ul {
           margin: 0;
@@ -502,16 +502,18 @@ const OrderSuccess2 = () => (
           margin-left: 5px;
           margin-right: 5px;
         }
-        @media (max-width: 767px){
-          .email-template-table, .main-bg-light{
+        @media (max-width: 767px) {
+          .email-template-table,
+          .main-bg-light {
             width: 520px;
-            margin-left: 20px
+            margin-left: 20px;
           }
         }
-        @media (max-width: 575px){
-          .email-template-table, .main-bg-light{
+        @media (max-width: 575px) {
+          .email-template-table,
+          .main-bg-light {
             width: 430px;
-            margin-left: 18px
+            margin-left: 18px;
           }
           .product-info tbody tr {
             display: flex;
@@ -519,61 +521,65 @@ const OrderSuccess2 = () => (
             align-items: center;
             flex-direction: column;
           }
-          .product-info tbody tr td img{
+          .product-info tbody tr td img {
             display: none;
           }
-          .main-sec{
+          .main-sec {
             text-align: center !important;
             margin-bottom: 0;
           }
-          .footer-social-icon tbody tr{
+          .footer-social-icon tbody tr {
             flex-flow: wrap;
           }
-          .order-detail{
+          .order-detail {
             margin-top: 15px;
             margin-bottom: 25px !important;
           }
-          .order-detail thead tr th:nth-child(2), .order-detail tbody tr:nth-child(-n+4) td:nth-child(2), 
-          .order-detail tbody tr:nth-child(3) td:nth-child(2){
+          .order-detail thead tr th:nth-child(2),
+          .order-detail tbody tr:nth-child(-n + 4) td:nth-child(2),
+          .order-detail tbody tr:nth-child(3) td:nth-child(2) {
             display: none;
           }
         }
-        @media (max-width: 479px){
-          .email-template-table, .main-bg-light{
+        @media (max-width: 479px) {
+          .email-template-table,
+          .main-bg-light {
             width: 322px;
-            margin-left: 12px
+            margin-left: 12px;
           }
-          .main-sec tbody tr td img{
+          .main-sec tbody tr td img {
             margin: 0 auto 18px !important;
           }
           .product-info tbody tr td {
             width: 100% !important;
           }
-          .product-info tbody tr td h5, .product-info tbody tr td p {
+          .product-info tbody tr td h5,
+          .product-info tbody tr td p {
             text-align: center !important;
           }
-          .email-media{
+          .email-media {
             margin-top: 15px;
           }
-          .order-detail tbody tr td[valign="top"]{
+          .order-detail tbody tr td[valign="top"] {
             padding-left: 0 !important;
           }
-          .main-bg-light .footer-social-icon ~ table{
+          .main-bg-light .footer-social-icon ~ table {
             margin: 6px auto 0 !important;
           }
-          .order-detail th{
+          .order-detail th {
             font-size: 14px;
           }
         }
-        @media (max-width: 359px){
-          .email-template-table, .main-bg-light{
+        @media (max-width: 359px) {
+          .email-template-table,
+          .main-bg-light {
             width: 280px;
           }
-          .order-detail th{
+          .order-detail th {
             font-size: 12px;
             padding: 8px;
           }
-          .order-detail tbody tr td img{
+          .order-detail tbody tr td img {
             width: 50px;
           }
         }

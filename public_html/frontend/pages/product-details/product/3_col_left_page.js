@@ -1,7 +1,7 @@
 import React, { useContext, useState, useRef, useEffect } from "react";
 import { Container, Row, Col, Media } from "reactstrap";
 import Slider from "react-slick";
-import {gql, useQuery } from "@apollo/client";
+import { gql, useQuery } from "@apollo/client";
 import ImageZoom from "../common/image-zoom";
 import DetailBox from "../common/detail-box";
 import Detail from "../common/detailPage";

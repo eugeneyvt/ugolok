@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Container, Row, Col, Media } from "reactstrap";
 import { useQuery } from "@apollo/client";
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 import Slider from "react-slick";
 import { Product4 } from "../../../services/script";
 import ProductItem from "../product-box/ProductBox6";

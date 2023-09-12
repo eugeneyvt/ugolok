@@ -26,15 +26,15 @@ const MasterCollectionBanner = ({ img, about, offer, link, classes }) => {
     <Col md="6">
       <Link href={link}>
         {/* <a> */}
-          <div className={`collection-banner ${classes}`}>
-            <Media src={img} className="img-fluid" alt="" />
-            <div className="contain-banner">
-              <div>
-                <h4>{offer}</h4>
-                <h2>{about}</h2>
-              </div>
+        <div className={`collection-banner ${classes}`}>
+          <Media src={img} className="img-fluid" alt="" />
+          <div className="contain-banner">
+            <div>
+              <h4>{offer}</h4>
+              <h2>{about}</h2>
             </div>
           </div>
+        </div>
         {/* </a> */}
       </Link>
     </Col>

@@ -3,37 +3,37 @@ import { Container, Row, Col, Media } from "reactstrap";
 
 const Data = [
   {
-    img: '/assets/images/pets/banner/1.jpg',
+    img: "/assets/images/pets/banner/1.jpg",
     title: "clothes",
     link: "#",
     classes: "p-left",
   },
   {
-    img: '/assets/images/pets/banner/2.jpg',
+    img: "/assets/images/pets/banner/2.jpg",
     title: "groom",
     link: "#",
     classes: "p-right text-end",
   },
   {
-    img: '/assets/images/pets/banner/3.jpg',
+    img: "/assets/images/pets/banner/3.jpg",
     title: "food",
     link: "#",
     classes: "p-left",
   },
   {
-    img: '/assets/images/pets/banner/4.jpg',
+    img: "/assets/images/pets/banner/4.jpg",
     title: "home",
     link: "#",
     classes: "p-right ",
   },
   {
-    img: '/assets/images/pets/banner/5.jpg',
+    img: "/assets/images/pets/banner/5.jpg",
     title: "cats",
     link: "#",
     classes: "p-right text-end",
   },
   {
-    img: '/assets/images/pets/banner/6.jpg',
+    img: "/assets/images/pets/banner/6.jpg",
     title: "bowls",
     link: "#",
     classes: "p-right",

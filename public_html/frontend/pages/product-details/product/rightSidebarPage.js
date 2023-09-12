@@ -64,7 +64,7 @@ const RightSidebarPage = () => {
   };
 
   const filterClick = () => {
-    document.getElementById("filter").style.left = "-15px"
+    document.getElementById("filter").style.left = "-15px";
   };
 
   const changeColorVar = (img_id) => {

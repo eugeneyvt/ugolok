@@ -1,4 +1,3 @@
-
 const typeDefs = `
     type Product {
         id: Int!
@@ -142,6 +141,4 @@ const typeDefs = `
     # }
 `;
 
-
-
-module.exports = typeDefs
+module.exports = typeDefs;

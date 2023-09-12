@@ -264,7 +264,8 @@ const ThemeSettings = () => {
             <div
               className="btn-group demo-btn"
               role="group"
-              aria-label="Basic example">
+              aria-label="Basic example"
+            >
               <Link href={link} className="btn new-tab-btn">
                 {/* <a > */}
                 {btnName}
@@ -298,12 +299,14 @@ const ThemeSettings = () => {
             <div
               className={`setting-title ${
                 isOpen && collapse == 1 ? "active" : ""
-              }`}>
+              }`}
+            >
               <h4
                 onClick={() => {
                   setCollapse(1);
                   setIsOpen(!isOpen);
-                }}>
+                }}
+              >
                 layout
                 <span className="according-menu"></span>
               </h4>
@@ -329,12 +332,14 @@ const ThemeSettings = () => {
             <div
               className={`setting-title ${
                 isOpen && collapse == 2 ? "active" : ""
-              }`}>
+              }`}
+            >
               <h4
                 onClick={() => {
                   setCollapse(2);
                   setIsOpen(!isOpen);
-                }}>
+                }}
+              >
                 shop
                 <span className="according-menu"></span>
               </h4>
@@ -360,12 +365,14 @@ const ThemeSettings = () => {
             <div
               className={`setting-title ${
                 isOpen && collapse == 3 ? "active" : ""
-              }`}>
+              }`}
+            >
               <h4
                 onClick={() => {
                   setCollapse(3);
                   setIsOpen(!isOpen);
-                }}>
+                }}
+              >
                 product
                 <span className="according-menu"></span>
               </h4>
@@ -391,12 +398,14 @@ const ThemeSettings = () => {
             <div
               className={`setting-title ${
                 isOpen && collapse == 4 ? "active" : ""
-              }`}>
+              }`}
+            >
               <h4
                 onClick={() => {
                   setCollapse(4);
                   setIsOpen(!isOpen);
-                }}>
+                }}
+              >
                 color option
                 <span className="according-menu"></span>
               </h4>
@@ -420,12 +429,14 @@ const ThemeSettings = () => {
             <div
               className={`setting-title ${
                 isOpen && collapse == 5 ? "active" : ""
-              }`}>
+              }`}
+            >
               <h4
                 onClick={() => {
                   setCollapse(5);
                   setIsOpen(!isOpen);
-                }}>
+                }}
+              >
                 RTL
                 <span className="according-menu"></span>
               </h4>
@@ -437,7 +448,8 @@ const ThemeSettings = () => {
                     <a
                       href="# "
                       className="btn setting_btn"
-                      onClick={() => layoutType(layoutState)}>
+                      onClick={() => layoutType(layoutState)}
+                    >
                       {layoutState}
                     </a>
                   </li>
@@ -447,13 +459,15 @@ const ThemeSettings = () => {
             <div className="buy_btn">
               <a
                 href="https://themeforest.net/item/multikart-responsive-react-ecommerce-template/23067773?s_rank=1"
-                className="btn purchase_btn">
+                className="btn purchase_btn"
+              >
                 <i className="fa fa-shopping-cart" aria-hidden="true"></i>{" "}
                 purchase Multikart now!
               </a>
               <a
                 href="https://themeforest.net/item/multikart-responsive-angular-ecommerce-template/22905358?s_rank=3"
-                className="btn purchase_btn">
+                className="btn purchase_btn"
+              >
                 <Media
                   src={`/assets/images/icon/angular.png`}
                   alt=""
@@ -463,13 +477,15 @@ const ThemeSettings = () => {
               </a>
               <a
                 href="https://themeforest.net/item/multikart-responsive-ecommerce-htms-template/22809967"
-                className="btn purchase_btn">
+                className="btn purchase_btn"
+              >
                 <i className="fa fa-html5" aria-hidden="true"></i> Multikart
                 HTML
               </a>
               <a
                 href="https://themeforest.net/item/multikart-multipurpose-shopify-sections-theme/23093831?s_rank=1"
-                className="btn purchase_btn">
+                className="btn purchase_btn"
+              >
                 <Media
                   src={`/assets/images/icon/shopify.png`}
                   alt=""
@@ -485,7 +501,8 @@ const ThemeSettings = () => {
         <div className="dark-light">
           <div
             className="theme-layout-version"
-            onClick={() => changeThemeLayout()}>
+            onClick={() => changeThemeLayout()}
+          >
             {themeLayout ? "Light" : "Dark"}
           </div>
         </div>
@@ -496,7 +513,8 @@ const ThemeSettings = () => {
             className="fa fa-clone"
             aria-hidden="true"
             onClick={toggle}
-            title="Configuration"></i>
+            title="Configuration"
+          ></i>
         </a>
       </div>
       <Modal centered={true} isOpen={modal} toggle={toggle}>

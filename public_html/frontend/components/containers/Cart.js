@@ -18,7 +18,8 @@ const CartComponent = ({ icon, layout }) => {
       {
         <li
           className="onhover-div mobile-cart"
-          onClick={() => setOpenSide(true)}>
+          onClick={() => setOpenSide(true)}
+        >
           <div className="cart-qty-cls">{cartList.length}</div>
           <div href={null}>
             <Media
@@ -33,7 +34,8 @@ const CartComponent = ({ icon, layout }) => {
 
       <div
         id="cart_side"
-        className={`add_to_cart ${layout} ${openSide ? "open-side" : ""} `}>
+        className={`add_to_cart ${layout} ${openSide ? "open-side" : ""} `}
+      >
         <a href={null} className="overlay"></a>
         <div className="cart-inner">
           <div className="cart_top">
@@ -88,15 +90,19 @@ const CartComponent = ({ icon, layout }) => {
                 <div className="buttons">
                   <Link
                     href="/page/account/cart"
-                    className="btn btn-solid btn-xs view-cart">
+                    className="btn btn-solid btn-xs view-cart"
+                  >
                     {/* <a > */}
                     view cart
                     {/* </a> */}
                   </Link>
-                  <Link href="/page/account/checkout" className="btn btn-solid btn-xs checkout">
+                  <Link
+                    href="/page/account/checkout"
+                    className="btn btn-solid btn-xs checkout"
+                  >
                     {/* <a > */}
-                      checkout
-                      {/* </a> */}
+                    checkout
+                    {/* </a> */}
                   </Link>
                 </div>
               </li>

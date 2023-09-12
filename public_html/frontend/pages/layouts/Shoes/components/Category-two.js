@@ -49,7 +49,9 @@ const CategoryTwo = () => (
       <Container fluid={true}>
         <Row className="category-border">
           {Data.map((data, i) => {
-            return <MasterCategory key={i} img={data.img.src} title={data.title} />;
+            return (
+              <MasterCategory key={i} img={data.img.src} title={data.title} />
+            );
           })}
         </Row>
       </Container>

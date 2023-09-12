@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { useQuery } from "@apollo/client";
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 import ProductItem from "../product-box/ProductBox1";
 import CartContext from "../../../helpers/cart/index";
 import { Container, Row, Col } from "reactstrap";

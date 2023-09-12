@@ -2,9 +2,21 @@ import React from "react";
 import { Container, Media, Row, Col } from "reactstrap";
 
 const Data = [
-  { img: '/assets/images/electronics/5.jpg', item: "speaker", offer: "10% off" },
-  { img: '/assets/images/electronics/6.jpg', item: "earplug", offer: "10% off" },
-  { img: '/assets/images/electronics/7.jpg', item: "best deal", offer: "50% off" },
+  {
+    img: "/assets/images/electronics/5.jpg",
+    item: "speaker",
+    offer: "10% off",
+  },
+  {
+    img: "/assets/images/electronics/6.jpg",
+    item: "earplug",
+    offer: "10% off",
+  },
+  {
+    img: "/assets/images/electronics/7.jpg",
+    item: "best deal",
+    offer: "50% off",
+  },
 ];
 
 const Banner = ({ img, item, offer }) => {

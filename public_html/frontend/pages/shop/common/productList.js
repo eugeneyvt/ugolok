@@ -90,7 +90,9 @@ const ProductList = ({ colClass, layoutList, openSidebar, noSidebar }) => {
     const pathname = window.location.pathname;
     setUrl(pathname);
     router.push(
-      `${pathname}?${filterContext.state}&brand=${selectedBrands}&color=${selectedColor}&size=${selectedSize}&minPrice=${selectedPrice.min}&maxPrice=${selectedPrice.max}`, undefined, { shallow: true }
+      `${pathname}?${filterContext.state}&brand=${selectedBrands}&color=${selectedColor}&size=${selectedSize}&minPrice=${selectedPrice.min}&maxPrice=${selectedPrice.max}`,
+      undefined,
+      { shallow: true }
     );
   }, [selectedBrands, selectedColor, selectedSize, selectedPrice]);
 
@@ -351,14 +353,14 @@ const ProductList = ({ colClass, layoutList, openSidebar, noSidebar }) => {
                 <Row>
                   {/* Product Box */}
                   {!data ||
-                    !data.products ||
-                    !data.products.items ||
-                    data.products.items.length === 0 ||
-                    loading ? (
+                  !data.products ||
+                  !data.products.items ||
+                  data.products.items.length === 0 ||
+                  loading ? (
                     data &&
-                      data.products &&
-                      data.products.items &&
-                      data.products.items.length === 0 ? (
+                    data.products &&
+                    data.products.items &&
+                    data.products.items.length === 0 ? (
                       <Col xs="12">
                         <div>
                           <div className="col-sm-12 empty-cart-cls text-center">
@@ -423,7 +425,10 @@ const ProductList = ({ colClass, layoutList, openSidebar, noSidebar }) => {
                   <Row>
                     <Col xl="12" md="12" sm="12">
                       {data && data.products && data.products.hasMore && (
-                        <Button className="load-more" onClick={() => handlePagination()}>
+                        <Button
+                          className="load-more"
+                          onClick={() => handlePagination()}
+                        >
                           {isLoading && (
                             <Spinner animation="border" variant="light" />
                           )}

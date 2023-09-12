@@ -10,7 +10,8 @@ const MasterMenu = () => {
         style={{ marginBottom: "0" }}
         className="headerTable"
         cellPadding="0"
-        cellSpacing="0">
+        cellSpacing="0"
+      >
         <tbody>
           <tr className="header">
             <td>

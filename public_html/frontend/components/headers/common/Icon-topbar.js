@@ -52,7 +52,8 @@ const IconTopbar = () => {
                     <div className="bar-style">
                       <i
                         className="fa fa-bars sidebar-bar"
-                        aria-hidden="true"></i>
+                        aria-hidden="true"
+                      ></i>
                     </div>
                   </a>
                 </div>

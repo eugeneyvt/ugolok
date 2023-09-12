@@ -74,13 +74,15 @@ const WishlistPage = () => {
                           <a
                             href={null}
                             className="icon me-3"
-                            onClick={() => removeFromWish(item)}>
+                            onClick={() => removeFromWish(item)}
+                          >
                             <i className="fa fa-times"></i>
                           </a>
                           <a
                             href={null}
                             className="cart"
-                            onClick={() => addCart(item)}>
+                            onClick={() => addCart(item)}
+                          >
                             <i className="fa fa-shopping-cart"></i>
                           </a>
                         </td>

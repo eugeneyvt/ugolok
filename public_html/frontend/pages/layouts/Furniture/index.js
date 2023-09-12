@@ -18,7 +18,11 @@ const Furniture = () => {
     <>
       <Helmet>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/x-icon" href={"/assets/images/favicon/5.png"} />
+        <link
+          rel="icon"
+          type="image/x-icon"
+          href={"/assets/images/favicon/5.png"}
+        />
       </Helmet>
       <ModalComponent />
       <HeaderTwo

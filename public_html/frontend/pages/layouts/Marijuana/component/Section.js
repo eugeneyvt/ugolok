@@ -6,20 +6,17 @@ const Data = [
   {
     img: svgLeaf,
     title: "19+ Only",
-    desc:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis cupiditate deleniti",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis cupiditate deleniti",
   },
   {
     img: svgLeaf,
     title: "30g limit",
-    desc:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis cupiditate deleniti",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis cupiditate deleniti",
   },
   {
     img: svgLeaf,
     title: "trusted source",
-    desc:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis cupiditate deleniti",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis cupiditate deleniti",
   },
 ];
 

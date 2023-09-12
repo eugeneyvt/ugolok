@@ -3,14 +3,14 @@ import { Media, Container, Col, Row } from "reactstrap";
 
 const Data = [
   {
-    img: '/assets/images/game/banner/1.jpg',
+    img: "/assets/images/game/banner/1.jpg",
     about: "for windows",
     offer: "save 10%",
     link: "#",
     class: " p-left text-start",
   },
   {
-    img: '/assets/images/game/banner/2.jpg',
+    img: "/assets/images/game/banner/2.jpg",
     about: "for psp",
     offer: "save 10%",
     link: "#",

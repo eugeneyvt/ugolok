@@ -12,7 +12,7 @@ const CollectionBanner = () => {
               <div className="collection-banner p-left text-center">
                 <div className="img-part">
                   <img
-                    src={'/assets/images/flower/sub-banner2.jpg'}
+                    src={"/assets/images/flower/sub-banner2.jpg"}
                     className="img-fluid blur-up lazyload"
                     alt=""
                   />
@@ -25,7 +25,7 @@ const CollectionBanner = () => {
               <div className="collection-banner p-right text-end">
                 <div className="img-part">
                   <img
-                    src={'/assets/images/flower/sub-banner1.jpg'}
+                    src={"/assets/images/flower/sub-banner1.jpg"}
                     className="img-fluid blur-up lazyload"
                     alt=""
                   />

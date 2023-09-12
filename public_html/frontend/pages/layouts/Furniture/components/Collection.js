@@ -6,21 +6,21 @@ import banner3 from "../../../../public/assets/images/furniture/2banner3.jpg";
 
 const Data = [
   {
-    img: '/assets/images/furniture/2banner1.jpg',
+    img: "/assets/images/furniture/2banner1.jpg",
     about: "sofa",
     offer: "save 30%",
     link: "#",
     class: "p-right text-end",
   },
   {
-    img: '/assets/images/furniture/2banner2.jpg',
+    img: "/assets/images/furniture/2banner2.jpg",
     about: "new arrival",
     offer: "save 60%",
     link: "#",
     class: "p-right text-end",
   },
   {
-    img: '/assets/images/furniture/2banner3.jpg',
+    img: "/assets/images/furniture/2banner3.jpg",
     about: "chair",
     offer: "save 60%",
     link: "#",

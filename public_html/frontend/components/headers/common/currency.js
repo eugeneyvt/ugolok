@@ -43,7 +43,8 @@ const Currency = ({ icon }) => {
                 href={null}
                 onClick={() => {
                   changeLanguage(item.val);
-                }}>
+                }}
+              >
                 {item.lang}
               </a>
             </li>

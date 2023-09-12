@@ -416,7 +416,10 @@ const Popupsidebar = ({ colClass, layoutList }) => {
                   <Row>
                     <Col xl="12" md="12" sm="12">
                       {data && data.products && data.products.hasMore && (
-                        <Button className="load-more" onClick={() => handlePagination()}>
+                        <Button
+                          className="load-more"
+                          onClick={() => handlePagination()}
+                        >
                           {isLoading && (
                             <Spinner animation="border" variant="light" />
                           )}

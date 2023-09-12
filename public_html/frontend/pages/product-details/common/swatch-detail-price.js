@@ -57,7 +57,8 @@ const SwatchDetailsWithPrice = (params) => {
                   className={vari.color}
                   key={i}
                   title={vari.color}
-                  onClick={() => params.changeColorVar(i)}></li>
+                  onClick={() => params.changeColorVar(i)}
+                ></li>
               );
             })}
           </ul>
@@ -105,7 +106,8 @@ const SwatchDetailsWithPrice = (params) => {
                     href={null}
                     data-toggle="modal"
                     data-target="#sizemodal"
-                    onClick={toggle}>
+                    onClick={toggle}
+                  >
                     size chart
                   </a>
                 </span>
@@ -141,7 +143,8 @@ const SwatchDetailsWithPrice = (params) => {
                   className="btn quantity-left-minus"
                   onClick={minusQty}
                   data-type="minus"
-                  data-field="">
+                  data-field=""
+                >
                   <i className="fa fa-angle-left"></i>
                 </button>
               </span>
@@ -158,7 +161,8 @@ const SwatchDetailsWithPrice = (params) => {
                   className="btn quantity-right-plus"
                   onClick={plusQty}
                   data-type="plus"
-                  data-field="">
+                  data-field=""
+                >
                   <i className="fa fa-angle-right"></i>
                 </button>
               </span>
@@ -169,7 +173,8 @@ const SwatchDetailsWithPrice = (params) => {
           <a
             href={null}
             className="btn btn-solid"
-            onClick={() => addToCart(product, quantity)}>
+            onClick={() => addToCart(product, quantity)}
+          >
             add to cart
           </a>
           <Link href={`/page/account/checkout`} className="btn btn-solid">

@@ -3,21 +3,21 @@ import { Container, Col, Row, Media } from "reactstrap";
 
 const Data = [
   {
-    img: '/assets/images/banner1.jpg',
+    img: "/assets/images/banner1.jpg",
     title: "minimum 10% off",
     desc: "new watch",
     link: "#",
     classes: " p-left",
   },
   {
-    img: '/assets/images/banner2.jpg',
+    img: "/assets/images/banner2.jpg",
     title: "",
     desc: "",
     link: "#",
     classes: "p-left text-center",
   },
   {
-    img: '/assets/images/banner.jpg',
+    img: "/assets/images/banner.jpg",
     title: "minimum 50% off",
     desc: "gold watch",
     link: "#",

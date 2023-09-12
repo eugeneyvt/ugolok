@@ -2,28 +2,28 @@ import React from "react";
 import { Container, Row, Col, Media } from "reactstrap";
 const Data = [
   {
-    img: '/assets/images/fashion/banner/5.jpg',
+    img: "/assets/images/fashion/banner/5.jpg",
     title: "save 30%",
     desc: "Camera",
     link: "#",
     classes: "p-right text-end",
   },
   {
-    img: '/assets/images/fashion/banner/10.jpg',
+    img: "/assets/images/fashion/banner/10.jpg",
     title: "save 60%",
     desc: "Bags",
     link: "#",
     classes: "p-right text-end",
   },
   {
-    img: '/assets/images/fashion/banner/8.jpg',
+    img: "/assets/images/fashion/banner/8.jpg",
     title: "save 60%",
     desc: "Toys",
     link: "#",
     classes: "p-right text-end",
   },
   {
-    img: '/assets/images/fashion/banner/9.jpg',
+    img: "/assets/images/fashion/banner/9.jpg",
     title: "save 60%",
     desc: "Shoes",
     link: "#",

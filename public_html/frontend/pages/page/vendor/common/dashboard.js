@@ -283,42 +283,48 @@ const Dashboard = () => {
                   <NavItem className="nav nav-tabs" id="myTab" role="tablist">
                     <NavLink
                       className={activeTab === "1" ? "active" : ""}
-                      onClick={() => setActiveTab("1")}>
+                      onClick={() => setActiveTab("1")}
+                    >
                       Dashboard
                     </NavLink>
                   </NavItem>
                   <NavItem className="nav nav-tabs" id="myTab" role="tablist">
                     <NavLink
                       className={activeTab === "2" ? "active" : ""}
-                      onClick={() => setActiveTab("2")}>
+                      onClick={() => setActiveTab("2")}
+                    >
                       Products
                     </NavLink>
                   </NavItem>
                   <NavItem className="nav nav-tabs" id="myTab" role="tablist">
                     <NavLink
                       className={activeTab === "3" ? "active" : ""}
-                      onClick={() => setActiveTab("3")}>
+                      onClick={() => setActiveTab("3")}
+                    >
                       Order
                     </NavLink>
                   </NavItem>
                   <NavItem className="nav nav-tabs" id="myTab" role="tablist">
                     <NavLink
                       className={activeTab === "4" ? "active" : ""}
-                      onClick={() => setActiveTab("4")}>
+                      onClick={() => setActiveTab("4")}
+                    >
                       Profile
                     </NavLink>
                   </NavItem>
                   <NavItem className="nav nav-tabs" id="myTab" role="tablist">
                     <NavLink
                       className={activeTab === "5" ? "active" : ""}
-                      onClick={() => setActiveTab("5")}>
+                      onClick={() => setActiveTab("5")}
+                    >
                       Settings
                     </NavLink>
                   </NavItem>
                   <NavItem className="nav nav-tabs" id="myTab" role="tablist">
                     <NavLink
                       className={activeTab === "6" ? "active" : ""}
-                      onClick={toggle}>
+                      onClick={toggle}
+                    >
                       Logout
                     </NavLink>
                   </NavItem>
@@ -528,7 +534,8 @@ const Dashboard = () => {
                               <h4>profile</h4>
                               <span
                                 data-toggle="modal"
-                                data-target="#edit-profile">
+                                data-target="#edit-profile"
+                              >
                                 edit
                               </span>
                             </div>
@@ -576,7 +583,8 @@ const Dashboard = () => {
                                       />
                                       <Label
                                         className="form-check-label"
-                                        for="exampleRadios1">
+                                        for="exampleRadios1"
+                                      >
                                         Allow Desktop Notifications
                                       </Label>
                                     </div>
@@ -590,7 +598,8 @@ const Dashboard = () => {
                                       />
                                       <Label
                                         className="form-check-label"
-                                        for="exampleRadios2">
+                                        for="exampleRadios2"
+                                      >
                                         Enable Notifications
                                       </Label>
                                     </div>
@@ -604,7 +613,8 @@ const Dashboard = () => {
                                       />
                                       <Label
                                         className="form-check-label"
-                                        for="exampleRadios3">
+                                        for="exampleRadios3"
+                                      >
                                         Get notification for my own activity
                                       </Label>
                                     </div>
@@ -618,7 +628,8 @@ const Dashboard = () => {
                                       />
                                       <Label
                                         className="form-check-label"
-                                        for="exampleRadios4">
+                                        for="exampleRadios4"
+                                      >
                                         DND
                                       </Label>
                                     </div>
@@ -640,7 +651,8 @@ const Dashboard = () => {
                                       />
                                       <Label
                                         className="form-check-label"
-                                        for="exampleRadios4">
+                                        for="exampleRadios4"
+                                      >
                                         I have a privacy concern
                                       </Label>
                                     </div>
@@ -654,7 +666,8 @@ const Dashboard = () => {
                                       />
                                       <Label
                                         className="form-check-label"
-                                        for="exampleRadios5">
+                                        for="exampleRadios5"
+                                      >
                                         This is temporary
                                       </Label>
                                     </div>
@@ -668,13 +681,15 @@ const Dashboard = () => {
                                       />
                                       <Label
                                         className="form-check-label"
-                                        for="exampleRadios6">
+                                        for="exampleRadios6"
+                                      >
                                         other
                                       </Label>
                                     </div>
                                     <button
                                       type="button"
-                                      className="btn btn-solid btn-xs">
+                                      className="btn btn-solid btn-xs"
+                                    >
                                       Deactivate Account
                                     </button>
                                   </Col>
@@ -695,7 +710,8 @@ const Dashboard = () => {
                                       />
                                       <Label
                                         className="form-check-label"
-                                        for="exampleRadios7">
+                                        for="exampleRadios7"
+                                      >
                                         No longer usable
                                       </Label>
                                     </div>
@@ -709,7 +725,8 @@ const Dashboard = () => {
                                       />
                                       <Label
                                         className="form-check-label"
-                                        for="exampleRadios8">
+                                        for="exampleRadios8"
+                                      >
                                         Want to switch on other account
                                       </Label>
                                     </div>
@@ -723,13 +740,15 @@ const Dashboard = () => {
                                       />
                                       <Label
                                         className="form-check-label"
-                                        for="exampleRadios9">
+                                        for="exampleRadios9"
+                                      >
                                         other
                                       </Label>
                                     </div>
                                     <button
                                       type="button"
-                                      className="btn btn-solid btn-xs">
+                                      className="btn btn-solid btn-xs"
+                                    >
                                       Delete Account
                                     </button>
                                   </Col>
@@ -750,13 +769,15 @@ const Dashboard = () => {
                   <Link
                     href={"/"}
                     className="btn-solid btn-custom"
-                    color="secondary">
+                    color="secondary"
+                  >
                     Yes
                   </Link>
                   <Button
                     className="btn-solid btn-custom"
                     color="secondary"
-                    onClick={toggle}>
+                    onClick={toggle}
+                  >
                     No
                   </Button>
                 </ModalFooter>

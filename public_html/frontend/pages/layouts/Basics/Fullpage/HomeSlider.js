@@ -19,32 +19,28 @@ const HomeSlider = () => {
     {
       class: "home25",
       title: { __html: "fresh coffee <br /> & cup " },
-      desc:
-        "  Lorem Ipsum is simply dummy text of the printing and       typesetting industry. Lorem Ipsum has been the       industry's standard dummy text ever since the 1500",
+      desc: "  Lorem Ipsum is simply dummy text of the printing and       typesetting industry. Lorem Ipsum has been the       industry's standard dummy text ever since the 1500",
       btn: "view collection",
       classes: "text-start p-left",
     },
     {
       class: "home24",
       title: { __html: " fresh vegetable <br /> & fruit" },
-      desc:
-        "  Lorem Ipsum is simply dummy text of the printing and       typesetting industry. Lorem Ipsum has been the       industry's standard dummy text ever since the 1500",
+      desc: "  Lorem Ipsum is simply dummy text of the printing and       typesetting industry. Lorem Ipsum has been the       industry's standard dummy text ever since the 1500",
       btn: "view collection",
       classes: "text-start p-left",
     },
     {
       class: "home23",
       title: { __html: "fresh strabery <br /> & ice-cream" },
-      desc:
-        "  Lorem Ipsum is simply dummy text of the printing and       typesetting industry. Lorem Ipsum has been the       industry's standard dummy text ever since the 1500",
+      desc: "  Lorem Ipsum is simply dummy text of the printing and       typesetting industry. Lorem Ipsum has been the       industry's standard dummy text ever since the 1500",
       btn: "view collection",
       classes: "text-start p-left",
     },
     {
       class: "home26",
       title: { __html: "fresh fruit <br /> & juice" },
-      desc:
-        "  Lorem Ipsum is simply dummy text of the printing and       typesetting industry. Lorem Ipsum has been the       industry's standard dummy text ever since the 1500",
+      desc: "  Lorem Ipsum is simply dummy text of the printing and       typesetting industry. Lorem Ipsum has been the       industry's standard dummy text ever since the 1500",
       btn: "view collection",
       classes: "text-start p-left",
     },

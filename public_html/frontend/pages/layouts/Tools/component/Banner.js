@@ -44,10 +44,7 @@ const Banner = () => {
                       <div>
                         <h4>Welcom to tools</h4>
                         <h1>Auto parts</h1>
-                        <a
-                          href="!#"
-                          className="btn btn-solid"
-                        >
+                        <a href="!#" className="btn btn-solid">
                           shop now
                         </a>
                       </div>

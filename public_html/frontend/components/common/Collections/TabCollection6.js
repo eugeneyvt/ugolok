@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import { Col, Container, Row } from "reactstrap";
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 import { useQuery } from "@apollo/client";
 import Slider from "react-slick";
 import { Product4 } from "../../../services/script";
@@ -52,10 +52,11 @@ const TabContent = ({ data, loading, cartClass, startIndex, endIndex }) => {
   return (
     <div>
       {(!data ||
-      !data.products ||
-      !data.products.items ||
-      data.products.items.length === 0 ||
-      loading) && loading !== undefined ? (
+        !data.products ||
+        !data.products.items ||
+        data.products.items.length === 0 ||
+        loading) &&
+      loading !== undefined ? (
         <div className="row mx-0 margin-default">
           <div className="col-xl-3 col-lg-4 col-6">
             <PostLoader />

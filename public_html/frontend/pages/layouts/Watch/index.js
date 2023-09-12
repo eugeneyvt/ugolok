@@ -15,7 +15,7 @@ import Blog from "../../../components/common/Blog/blog1";
 import ModalComponent from "../../../components/common/Modal";
 import Instagram from "../../../components/common/instagram/instagram2";
 import Helmet from "react-helmet";
-import MasterFooterThree from '../../../components/footers/common/MasterFooterThree'
+import MasterFooterThree from "../../../components/footers/common/MasterFooterThree";
 
 const Watch = () => {
   useEffect(() => {
@@ -26,7 +26,11 @@ const Watch = () => {
       <ModalComponent />
       <Helmet>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/x-icon" href={"/assets/images/favicon/4.png"} />
+        <link
+          rel="icon"
+          type="image/x-icon"
+          href={"/assets/images/favicon/4.png"}
+        />
       </Helmet>
       <HeaderFive
         logoName={"layout4/logo.png"}
@@ -74,7 +78,7 @@ const Watch = () => {
         belowSection={"section-b-space darken-layout"}
         logoName={"layout4/footerlogo.png"}
         myAccount={true}
-        footerSectionLayout={'darken-layout'}
+        footerSectionLayout={"darken-layout"}
         newLatter={true}
       />
     </>

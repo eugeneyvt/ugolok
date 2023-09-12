@@ -73,7 +73,8 @@ const ProductItem = ({ product, addCart, addWishlist, addCompare }) => {
             data-toggle="modal"
             data-target="#addtocart"
             onClick={addCart}
-            title="Add to cart">
+            title="Add to cart"
+          >
             <i className="fa fa-shopping-cart"></i>
           </button>
           <a href={null} title="Add to Wishlist" onClick={addWishlist}>
@@ -84,7 +85,8 @@ const ProductItem = ({ product, addCart, addWishlist, addCompare }) => {
             data-toggle="modal"
             data-target="#quick-view"
             onClick={toggle}
-            title="Quick View">
+            title="Quick View"
+          >
             <i className="fa fa-plus-circle" aria-hidden="true"></i>
           </a>
           <a href={null} title="Compare" onClick={toggleCompare}>
@@ -96,7 +98,8 @@ const ProductItem = ({ product, addCart, addWishlist, addCompare }) => {
         isOpen={modalCompare}
         toggle={toggleCompare}
         className="modal-content"
-        centered>
+        centered
+      >
         <ModalHeader toggle={toggleCompare}>Quick View</ModalHeader>
         <ModalBody>
           <Row className="compare-modal">
@@ -135,7 +138,8 @@ const ProductItem = ({ product, addCart, addWishlist, addCompare }) => {
         toggle={toggle}
         className="quikview-modal modal-content"
         centered
-        size="lg">
+        size="lg"
+      >
         <ModalBody>
           <Row>
             <Col lg="6" xs="12">
@@ -169,7 +173,8 @@ const ProductItem = ({ product, addCart, addWishlist, addCompare }) => {
                                   vari.image_id,
                                   product.images
                                 )
-                              }></li>
+                              }
+                            ></li>
                           );
                         })}
                       </ul>
@@ -209,7 +214,8 @@ const ProductItem = ({ product, addCart, addWishlist, addCompare }) => {
                           className="btn quantity-left-minus"
                           onClick={minusQty}
                           data-type="minus"
-                          data-field="">
+                          data-field=""
+                        >
                           <i className="fa fa-angle-left"></i>
                         </button>
                       </span>
@@ -226,7 +232,8 @@ const ProductItem = ({ product, addCart, addWishlist, addCompare }) => {
                           className="btn quantity-right-plus"
                           onClick={() => plusQty(product)}
                           data-type="plus"
-                          data-field="">
+                          data-field=""
+                        >
                           <i className="fa fa-angle-right"></i>
                         </button>
                       </span>
@@ -236,12 +243,14 @@ const ProductItem = ({ product, addCart, addWishlist, addCompare }) => {
                 <div className="product-buttons">
                   <button
                     className="btn btn-solid"
-                    onClick={() => addCart(product, quantity)}>
+                    onClick={() => addCart(product, quantity)}
+                  >
                     add to cart
                   </button>
                   <button
                     className="btn btn-solid"
-                    onClick={clickProductDetail}>
+                    onClick={clickProductDetail}
+                  >
                     View detail
                   </button>
                 </div>

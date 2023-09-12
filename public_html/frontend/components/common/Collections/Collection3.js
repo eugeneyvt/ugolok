@@ -43,7 +43,20 @@ const GET_PRODUCTS = gql`
   }
 `;
 
-const TopCollection = ({ type, title, subtitle, designClass, noSlider, cartClass, productSlider, titleClass, noTitle, innerClass, inner, backImage }) => {
+const TopCollection = ({
+  type,
+  title,
+  subtitle,
+  designClass,
+  noSlider,
+  cartClass,
+  productSlider,
+  titleClass,
+  noTitle,
+  innerClass,
+  inner,
+  backImage,
+}) => {
   const context = useContext(CartContext);
   const contextWishlist = useContext(WishlistContext);
   const comapreList = useContext(CompareContext);
@@ -112,7 +125,17 @@ const TopCollection = ({ type, title, subtitle, designClass, noSlider, cartClass
                     {data &&
                       data.products.items.map((product, i) => (
                         <div key={i}>
-                          <ProductItems product={product} title={title} addWishlist={() => contextWishlist.addToWish(product)} addCart={() => context.addToCart(product, quantity)} addCompare={() => comapreList.addToCompare(product)} cartClass={cartClass} backImage={backImage} />
+                          <ProductItems
+                            product={product}
+                            title={title}
+                            addWishlist={() =>
+                              contextWishlist.addToWish(product)
+                            }
+                            addCart={() => context.addToCart(product, quantity)}
+                            addCompare={() => comapreList.addToCompare(product)}
+                            cartClass={cartClass}
+                            backImage={backImage}
+                          />
                         </div>
                       ))}
                   </Slider>
@@ -133,7 +156,11 @@ const TopCollection = ({ type, title, subtitle, designClass, noSlider, cartClass
             )}
             <Container>
               <Row className="margin-default">
-                {!data || !data.products || !data.products.items || !data.products.items.length === 0 || loading ? (
+                {!data ||
+                !data.products ||
+                !data.products.items ||
+                !data.products.items.length === 0 ||
+                loading ? (
                   <div className="row margin-default">
                     <div className="col-xl-3 col-lg-4 col-6">
                       <PostLoader />
@@ -153,7 +180,16 @@ const TopCollection = ({ type, title, subtitle, designClass, noSlider, cartClass
                   data.products.items.slice(0, 8).map((product, index) => (
                     <Col xl="3" sm="6" key={index}>
                       <div>
-                        <ProductItems product={product} backImage={backImage} addCompare={() => comapreList.addToCompare(product)} addWishlist={() => contextWishlist.addToWish(product)} title={title} cartClass={cartClass} addCart={() => context.addToCart(product, quantity)} key={index} />
+                        <ProductItems
+                          product={product}
+                          backImage={backImage}
+                          addCompare={() => comapreList.addToCompare(product)}
+                          addWishlist={() => contextWishlist.addToWish(product)}
+                          title={title}
+                          cartClass={cartClass}
+                          addCart={() => context.addToCart(product, quantity)}
+                          key={index}
+                        />
                       </div>
                     </Col>
                   ))

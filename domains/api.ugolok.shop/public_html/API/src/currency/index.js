@@ -8,6 +8,6 @@ const CurrencyTypeDefs = `
   type Query {
     currency: [Currency]
   }
-`
+`;
 
-module.export = CurrencyTypeDefs
+module.export = CurrencyTypeDefs;

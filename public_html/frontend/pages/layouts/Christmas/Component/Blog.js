@@ -4,7 +4,7 @@ import { Col, Container, Media, Row } from "reactstrap";
 import Testimonial1 from "../../../../public/assets/images/christmas/testimonial/1.jpg";
 import Shanta from "../../../../public/assets/images/christmas/testimonial/santa.png";
 import { Slider3 } from "../../../../services/script";
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 import { useQuery } from "@apollo/client";
 import Link from "next/link";
 

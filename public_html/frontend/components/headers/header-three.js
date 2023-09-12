@@ -85,13 +85,13 @@ const HeaderThree = (props) => {
                       <ul>
                         <li className="onhover-div mobile-search">
                           <div>
-                          <Media
+                            <Media
                               src={search.src}
                               onClick={openSearch}
                               className="img-fluid"
                               alt=""
-                          />
-                          <i
+                            />
+                            <i
                               className="fa fa-search"
                               onClick={openSearch}
                             ></i>

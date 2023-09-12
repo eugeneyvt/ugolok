@@ -50,7 +50,7 @@ const ProductsCollection = ({ type, col }) => {
     default: 4,
     1199: 3,
     767: 2,
-    500: 1
+    500: 1,
   };
 
   var { data } = useQuery(GET_PRODUCTS, {

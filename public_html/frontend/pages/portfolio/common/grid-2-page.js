@@ -39,14 +39,59 @@ const GET_PRODUCTS = gql`
   }
 `;
 
-const images = [require("../../../public/assets/images/pets/pro/9.jpg"), require("../../../public/assets/images/pets/pro/2.jpg"), require("../../../public/assets/images/pets/pro/12.jpg"), require("../../../public/assets/images/pets/pro/13.jpg"), require("../../../public/assets/images/pets/pro/10.jpg"), require("../../../public/assets/images/pets/pro/11.jpg"), require("../../../public/assets/images/pets/pro/14.jpg"), require("../../../public/assets/images/pets/pro/8.jpg")];
+const images = [
+  require("../../../public/assets/images/pets/pro/9.jpg"),
+  require("../../../public/assets/images/pets/pro/2.jpg"),
+  require("../../../public/assets/images/pets/pro/12.jpg"),
+  require("../../../public/assets/images/pets/pro/13.jpg"),
+  require("../../../public/assets/images/pets/pro/10.jpg"),
+  require("../../../public/assets/images/pets/pro/11.jpg"),
+  require("../../../public/assets/images/pets/pro/14.jpg"),
+  require("../../../public/assets/images/pets/pro/8.jpg"),
+];
 
-const fashionImages = [require("../../../public/assets/images/pro3/39.jpg"), require("../../../public/assets/images/pro3/3.jpg"), require("../../../public/assets/images/pro3/1.jpg"), require("../../../public/assets/images/pro3/8.jpg"), require("../../../public/assets/images/pro3/9.jpg"), require("../../../public/assets/images/pro3/11.jpg"), require("../../../public/assets/images/pro3/13.jpg"), require("../../../public/assets/images/pro3/14.jpg")];
+const fashionImages = [
+  require("../../../public/assets/images/pro3/39.jpg"),
+  require("../../../public/assets/images/pro3/3.jpg"),
+  require("../../../public/assets/images/pro3/1.jpg"),
+  require("../../../public/assets/images/pro3/8.jpg"),
+  require("../../../public/assets/images/pro3/9.jpg"),
+  require("../../../public/assets/images/pro3/11.jpg"),
+  require("../../../public/assets/images/pro3/13.jpg"),
+  require("../../../public/assets/images/pro3/14.jpg"),
+];
 
-const bagImages = [require("../../../public/assets/images/pro1/1.jpg"), require("../../../public/assets/images/pro1/4.jpg"), require("../../../public/assets/images/pro1/10.jpg"), require("../../../public/assets/images/pro1/2.jpg"), require("../../../public/assets/images/pro1/16.jpg"), require("../../../public/assets/images/pro1/7.jpg"), require("../../../public/assets/images/pro1/4.jpg"), require("../../../public/assets/images/pro1/12.jpg")];
+const bagImages = [
+  require("../../../public/assets/images/pro1/1.jpg"),
+  require("../../../public/assets/images/pro1/4.jpg"),
+  require("../../../public/assets/images/pro1/10.jpg"),
+  require("../../../public/assets/images/pro1/2.jpg"),
+  require("../../../public/assets/images/pro1/16.jpg"),
+  require("../../../public/assets/images/pro1/7.jpg"),
+  require("../../../public/assets/images/pro1/4.jpg"),
+  require("../../../public/assets/images/pro1/12.jpg"),
+];
 
-const shoesImages = [require("../../../public/assets/images/pro/1.jpg"), require("../../../public/assets/images/pro/16.jpg"), require("../../../public/assets/images/pro/23.jpg"), require("../../../public/assets/images/pro/26.jpg"), require("../../../public/assets/images/pro/6.jpg"), require("../../../public/assets/images/pro/33.jpg"), require("../../../public/assets/images/pro/37.jpg"), require("../../../public/assets/images/pro/13.jpg")];
-const watchImages = [require("../../../public/assets/images/pro2/2.jpg"), require("../../../public/assets/images/pro2/3.jpg"), require("../../../public/assets/images/pro2/6.jpg"), require("../../../public/assets/images/pro2/15.jpg"), require("../../../public/assets/images/pro2/8.jpg"), require("../../../public/assets/images/pro2/9.jpg"), require("../../../public/assets/images/pro2/13.jpg"), require("../../../public/assets/images/pro2/4.jpg")];
+const shoesImages = [
+  require("../../../public/assets/images/pro/1.jpg"),
+  require("../../../public/assets/images/pro/16.jpg"),
+  require("../../../public/assets/images/pro/23.jpg"),
+  require("../../../public/assets/images/pro/26.jpg"),
+  require("../../../public/assets/images/pro/6.jpg"),
+  require("../../../public/assets/images/pro/33.jpg"),
+  require("../../../public/assets/images/pro/37.jpg"),
+  require("../../../public/assets/images/pro/13.jpg"),
+];
+const watchImages = [
+  require("../../../public/assets/images/pro2/2.jpg"),
+  require("../../../public/assets/images/pro2/3.jpg"),
+  require("../../../public/assets/images/pro2/6.jpg"),
+  require("../../../public/assets/images/pro2/15.jpg"),
+  require("../../../public/assets/images/pro2/8.jpg"),
+  require("../../../public/assets/images/pro2/9.jpg"),
+  require("../../../public/assets/images/pro2/13.jpg"),
+  require("../../../public/assets/images/pro2/4.jpg"),
+];
 
 const GridTwoPage = ({ colClass, limit }) => {
   const l = parseInt(limit);
@@ -65,13 +110,19 @@ const GridTwoPage = ({ colClass, limit }) => {
   const MasterTabPannel = ({ img }) => {
     return (
       <>
-        {!data || !data.products || data.products.items.length === 0 || loading ? (
+        {!data ||
+        !data.products ||
+        data.products.items.length === 0 ||
+        loading ? (
           <PostLoader />
         ) : (
           <>
             {data &&
               data.products.items.map((product, index) => (
-                <div className={`isotopeSelector filter fashion ${colClass}`} key={index}>
+                <div
+                  className={`isotopeSelector filter fashion ${colClass}`}
+                  key={index}
+                >
                   <div className="overlay">
                     <div className="border-portfolio">
                       <a>
@@ -83,16 +134,26 @@ const GridTwoPage = ({ colClass, limit }) => {
                               index: index,
                               isOpen: true,
                             })
-                          }>
+                          }
+                        >
                           <i className="fa fa-plus" aria-hidden="true"></i>
                         </div>
-                        <Media src={product.images[0].src} className="img-fluid blur-up lazyload bg-img" />
+                        <Media
+                          src={product.images[0].src}
+                          className="img-fluid blur-up lazyload bg-img"
+                        />
                       </a>
                       {photoIndex.isOpen && (
                         <Lightbox
                           mainSrc={img[photoIndex.index].default.src}
-                          nextSrc={img[(photoIndex.index + 1) % img.length].default.src}
-                          prevSrc={images[(photoIndex.index + img.length - 1) % img.length].default.src}
+                          nextSrc={
+                            img[(photoIndex.index + 1) % img.length].default.src
+                          }
+                          prevSrc={
+                            images[
+                              (photoIndex.index + img.length - 1) % img.length
+                            ].default.src
+                          }
                           imageTitle={photoIndex.index + 1 + "/" + img.length}
                           onCloseRequest={() =>
                             setPhotoIndex({
@@ -103,7 +164,9 @@ const GridTwoPage = ({ colClass, limit }) => {
                           onMovePrevRequest={() =>
                             setPhotoIndex({
                               ...photoIndex,
-                              index: (photoIndex.index + img.length - 1) % img.length,
+                              index:
+                                (photoIndex.index + img.length - 1) %
+                                img.length,
                             })
                           }
                           onMoveNextRequest={() =>
@@ -129,19 +192,49 @@ const GridTwoPage = ({ colClass, limit }) => {
       <Container>
         <Tabs>
           <TabList align="center" id="form1">
-            <Tab className={`filter-button project_button ${activeTab == "pets" ? "active" : ""}`} onClick={() => setActiveTab("pets")} data-filter="all">
+            <Tab
+              className={`filter-button project_button ${
+                activeTab == "pets" ? "active" : ""
+              }`}
+              onClick={() => setActiveTab("pets")}
+              data-filter="all"
+            >
               Pets
             </Tab>
-            <Tab className={`filter-button project_button ${activeTab == "fashion" ? "active" : ""}`} onClick={() => setActiveTab("fashion")} data-filter="fashion">
+            <Tab
+              className={`filter-button project_button ${
+                activeTab == "fashion" ? "active" : ""
+              }`}
+              onClick={() => setActiveTab("fashion")}
+              data-filter="fashion"
+            >
               Fashion
             </Tab>
-            <Tab className={`filter-button project_button ${activeTab == "bags" ? "active" : ""}`} onClick={() => setActiveTab("bags")} data-filter="bags">
+            <Tab
+              className={`filter-button project_button ${
+                activeTab == "bags" ? "active" : ""
+              }`}
+              onClick={() => setActiveTab("bags")}
+              data-filter="bags"
+            >
               Bags
             </Tab>
-            <Tab className={`filter-button project_button ${activeTab == "shoes" ? "active" : ""}`} onClick={() => setActiveTab("shoes")} data-filter="shoes">
+            <Tab
+              className={`filter-button project_button ${
+                activeTab == "shoes" ? "active" : ""
+              }`}
+              onClick={() => setActiveTab("shoes")}
+              data-filter="shoes"
+            >
               Shoes
             </Tab>
-            <Tab className={`filter-button project_button ${activeTab == "watch" ? "active" : ""}`} onClick={() => setActiveTab("watch")} data-filter="watch">
+            <Tab
+              className={`filter-button project_button ${
+                activeTab == "watch" ? "active" : ""
+              }`}
+              onClick={() => setActiveTab("watch")}
+              data-filter="watch"
+            >
               Watch
             </Tab>
           </TabList>

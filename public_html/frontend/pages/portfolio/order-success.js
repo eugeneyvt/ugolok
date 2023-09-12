@@ -21,7 +21,13 @@ const OrderSuccess = () => {
         <tbody>
           <tr>
             <td>
-              <Table className="top-sec" align="center" border="0" cellPadding="0" cellSpacing="0">
+              <Table
+                className="top-sec"
+                align="center"
+                border="0"
+                cellPadding="0"
+                cellSpacing="0"
+              >
                 <tbody>
                   <tr>
                     <td>
@@ -104,7 +110,7 @@ const OrderSuccess = () => {
                     </td>
                     <td valign="top" style={{ paddingLeft: "15px" }}>
                       <h5 style={{ marginTop: "15px", textAlign: "left" }}>
-                      This comfotable headphones For ear.{" "}
+                        This comfotable headphones For ear.{" "}
                       </h5>
                     </td>
                     <td valign="top" style={{ paddingLeft: "0" }}>
@@ -151,7 +157,7 @@ const OrderSuccess = () => {
                     </td>
                     <td valign="top" style={{ paddingLeft: "15px" }}>
                       <h5 style={{ marginTop: "15px", textAlign: "left" }}>
-                      This comfotable chairs and &amp; Sofa or etc.{" "}
+                        This comfotable chairs and &amp; Sofa or etc.{" "}
                       </h5>
                     </td>
                     <td valign="top" style={{ paddingLeft: "0" }}>
@@ -444,7 +450,7 @@ const OrderSuccess = () => {
             background-color: #e2e2e2;
             display: block;
           }
-          .setting-box .setting-title h4{
+          .setting-box .setting-title h4 {
             text-align: left;
           }
           .email-template-table {
@@ -482,28 +488,32 @@ const OrderSuccess = () => {
             padding: 15px;
             text-align: center;
           }
-          @media (max-width: 767px){
-            .email-template-table, .main-bg-light{
+          @media (max-width: 767px) {
+            .email-template-table,
+            .main-bg-light {
               width: 520px;
-              margin-left: 20px
+              margin-left: 20px;
             }
           }
-          @media (max-width: 575px){
-            .email-template-table, .main-bg-light{
+          @media (max-width: 575px) {
+            .email-template-table,
+            .main-bg-light {
               width: 430px;
-              margin-left: 18px
+              margin-left: 18px;
             }
-            .order-detail tbody tr:nth-child(1) th:nth-child(2), .order-detail tbody tr:nth-child(2) td:nth-child(2), 
-            .order-detail tbody tr:nth-child(3) td:nth-child(2){
+            .order-detail tbody tr:nth-child(1) th:nth-child(2),
+            .order-detail tbody tr:nth-child(2) td:nth-child(2),
+            .order-detail tbody tr:nth-child(3) td:nth-child(2) {
               display: none;
             }
           }
-          @media (max-width: 479px){
-            .email-template-table, .main-bg-light{
+          @media (max-width: 479px) {
+            .email-template-table,
+            .main-bg-light {
               width: 322px;
-              margin-left: 12px
+              margin-left: 12px;
             }
-            .footer-social-icon tbody tr{
+            .footer-social-icon tbody tr {
               flex-flow: wrap;
             }
             .product-info tbody tr {
@@ -515,38 +525,40 @@ const OrderSuccess = () => {
             .product-info tbody tr td {
               width: 100% !important;
             }
-            .product-info tbody tr td h5, .product-info tbody tr td p {
+            .product-info tbody tr td h5,
+            .product-info tbody tr td p {
               text-align: center !important;
             }
             .product-info tbody tr td:nth-child(2) {
               display: none;
             }
-            .email-media{
+            .email-media {
               margin-top: 15px;
             }
-            .top-sec tbody tr:last-child img{
+            .top-sec tbody tr:last-child img {
               width: 260px;
               margin-top: 15px;
             }
-            .order-detail tbody tr td[valign="top"]{
+            .order-detail tbody tr td[valign="top"] {
               padding-left: 0 !important;
             }
-            .order-detail th{
+            .order-detail th {
               font-size: 14px;
             }
           }
-          @media (max-width: 359px){
-            .email-template-table, .main-bg-light{
+          @media (max-width: 359px) {
+            .email-template-table,
+            .main-bg-light {
               width: 280px;
             }
-            .top-sec tbody tr:last-child img{
+            .top-sec tbody tr:last-child img {
               width: 200px;
             }
-            .order-detail th{
+            .order-detail th {
               font-size: 12px;
               padding: 8px;
             }
-            .order-detail tbody tr td img{
+            .order-detail tbody tr td img {
               width: 50px;
             }
           }

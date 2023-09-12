@@ -1,10 +1,9 @@
 const loadCurrency = require("./data");
 
 const CurrencyResolver = {
-    Query :{
-        currency: (root, args, context, info) => loadCurrency,   
-        }
-    }
+  Query: {
+    currency: (root, args, context, info) => loadCurrency,
+  },
+};
 
-
-module.exports = CurrencyResolver
+module.exports = CurrencyResolver;

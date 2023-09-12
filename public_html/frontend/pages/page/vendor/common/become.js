@@ -45,20 +45,17 @@ const BannerData = [
   {
     no: "1",
     title: "List your products & Get support service provider",
-    desc:
-      "Register your business for free and create a productcatalogue. Sell under your own private label or sell an existing brand. Get your documentation & cataloging done with ease from our Professional Services network.",
+    desc: "Register your business for free and create a productcatalogue. Sell under your own private label or sell an existing brand. Get your documentation & cataloging done with ease from our Professional Services network.",
   },
   {
     no: "2",
     title: "Receive Orders & Schedule A Pickup",
-    desc:
-      "Once listed, your products will be available to millions of users.Get orders and manage your online business via our Seller Panel and Seller Zone Mobile App.",
+    desc: "Once listed, your products will be available to millions of users.Get orders and manage your online business via our Seller Panel and Seller Zone Mobile App.",
   },
   {
     no: "3",
     title: "Receive Quick Payment & Grow Your Business",
-    desc:
-      "Receive quick and hassle-free payments in your account once your orders are fulfilled. Expand your business with low interest & collateral-free loans.",
+    desc: "Receive quick and hassle-free payments in your account once your orders are fulfilled. Expand your business with low interest & collateral-free loans.",
   },
 ];
 

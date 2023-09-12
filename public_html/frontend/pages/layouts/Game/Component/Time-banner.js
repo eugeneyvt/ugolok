@@ -15,7 +15,7 @@ const TimeBanner = () => {
             </div>
           </Col>
           <Col md="6">
-              <CountdownComponent />
+            <CountdownComponent />
           </Col>
         </Row>
       </Container>

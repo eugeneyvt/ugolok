@@ -21,7 +21,11 @@ const Price = () => {
     if (value) {
       setSelectedPrice({ min: value[0], max: value[1] });
       setValues(value);
-      router.push(`${url}?category=${context.state}&brand=${context.selectedBrands}&color=${context.selectedColor}&size=${context.selectedSize}&minPrice=${context.selectedPrice?.min}&maxPrice=${context.selectedPrice?.max}`, undefined, { shallow: true });
+      router.push(
+        `${url}?category=${context.state}&brand=${context.selectedBrands}&color=${context.selectedColor}&size=${context.selectedSize}&minPrice=${context.selectedPrice?.min}&maxPrice=${context.selectedPrice?.max}`,
+        undefined,
+        { shallow: true }
+      );
     }
   };
   return (
@@ -50,7 +54,8 @@ const Price = () => {
                       height: "36px",
                       display: "flex",
                       width: "100%",
-                    }}>
+                    }}
+                  >
                     <output style={{ marginTop: "30px" }}>{values[0]}</output>
                     <div
                       ref={props.ref}
@@ -65,7 +70,8 @@ const Price = () => {
                           max: price.max,
                         }),
                         alignSelf: "center",
-                      }}>
+                      }}
+                    >
                       {children}
                     </div>
                     <output style={{ marginTop: "30px" }}>{values[1]}</output>
@@ -84,7 +90,8 @@ const Price = () => {
                       justifyContent: "center",
                       alignItems: "center",
                       boxShadow: "0px 2px 6px #AAA",
-                    }}></div>
+                    }}
+                  ></div>
                 )}
               />
             </div>

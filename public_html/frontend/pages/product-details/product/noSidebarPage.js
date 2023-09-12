@@ -61,7 +61,6 @@ const NoSidebarPage = ({ pathId }) => {
     focusOnSelect: true,
   };
 
-
   const changeColorVar = (img_id) => {
     slider2.current.slickGoTo(img_id);
   };

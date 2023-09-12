@@ -70,14 +70,15 @@ const ProducxBox = () => {
         cartClass="cart-info cart-wrap"
       />
       <div className="section-b-space section-t-space">
-      <CollectionTen
-        type="game"
-        title="Product style 7"
-        productSlider={Product4}
-        designClass="ratio_asos game-product section-b-space"
-        noSlider="true"
-        cartClass="cart-info cart-wrap"
-      /></div>
+        <CollectionTen
+          type="game"
+          title="Product style 7"
+          productSlider={Product4}
+          designClass="ratio_asos game-product section-b-space"
+          noSlider="true"
+          cartClass="cart-info cart-wrap"
+        />
+      </div>
       <Collection
         type="gym"
         title="Product style 8"

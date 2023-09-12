@@ -56,7 +56,8 @@ const ProductSection = ({ product, addToComapre, addWishlist, addCart }) => {
                 href={null}
                 title="Add to Wishlist"
                 tabIndex="0"
-                onClick={addWishlist}>
+                onClick={addWishlist}
+              >
                 <i className="fa fa-heart" aria-hidden="true"></i>
               </a>
               <a href={null} title="Quick View" onClick={toggle}>
@@ -65,7 +66,8 @@ const ProductSection = ({ product, addToComapre, addWishlist, addCart }) => {
               <Modal
                 isOpen={modal}
                 toggle={toggle}
-                className="modal-lg quickview-modal mt-4">
+                className="modal-lg quickview-modal mt-4"
+              >
                 <ModalBody>
                   <Row>
                     <Col lg="6" xs="12">
@@ -99,7 +101,8 @@ const ProductSection = ({ product, addToComapre, addWishlist, addCart }) => {
                                           vari.image_id,
                                           product.images
                                         )
-                                      }></li>
+                                      }
+                                    ></li>
                                   );
                                 })}
                               </ul>
@@ -139,7 +142,8 @@ const ProductSection = ({ product, addToComapre, addWishlist, addCart }) => {
                                   className="btn quantity-left-minus"
                                   onClick={minusQty}
                                   data-type="minus"
-                                  data-field="">
+                                  data-field=""
+                                >
                                   <i className="fa fa-angle-left"></i>
                                 </button>
                               </span>
@@ -156,7 +160,8 @@ const ProductSection = ({ product, addToComapre, addWishlist, addCart }) => {
                                   className="btn quantity-right-plus"
                                   onClick={() => plusQty(product)}
                                   data-type="plus"
-                                  data-field="">
+                                  data-field=""
+                                >
                                   <i className="fa fa-angle-right"></i>
                                 </button>
                               </span>
@@ -166,12 +171,14 @@ const ProductSection = ({ product, addToComapre, addWishlist, addCart }) => {
                         <div className="product-buttons">
                           <button
                             className="btn btn-solid"
-                            onClick={() => addCart(product, quantity)}>
+                            onClick={() => addCart(product, quantity)}
+                          >
                             add to cart
                           </button>
                           <button
                             className="btn btn-solid"
-                            onClick={clickProductDetail}>
+                            onClick={clickProductDetail}
+                          >
                             View detail
                           </button>
                         </div>
@@ -187,7 +194,8 @@ const ProductSection = ({ product, addToComapre, addWishlist, addCart }) => {
                 isOpen={modalCompare}
                 toggle={toggleCompare}
                 className="modal-content"
-                centered>
+                centered
+              >
                 <ModalHeader toggle={toggleCompare}>Quick View</ModalHeader>
                 <ModalBody>
                   <Row className="compare-modal">
@@ -210,7 +218,8 @@ const ProductSection = ({ product, addToComapre, addWishlist, addCart }) => {
                           <div className="buttons d-flex justify-content-center">
                             <Link
                               href="/page/compare"
-                              className="btn-sm btn-solid">
+                              className="btn-sm btn-solid"
+                            >
                               {/* <a
                                 href={null}
                                 
@@ -231,7 +240,8 @@ const ProductSection = ({ product, addToComapre, addWishlist, addCart }) => {
               className="add-button"
               data-toggle="modal"
               data-target="#addtocart"
-              onClick={addCart}>
+              onClick={addCart}
+            >
               add to cart
             </div>
           </div>

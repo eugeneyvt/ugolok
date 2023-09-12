@@ -36,13 +36,13 @@ const Lookbook = () => {
               <div className="lookbook-block">
                 <div>
                   <Media
-                    src={'/assets/images/lookbook.jpg'}
+                    src={"/assets/images/lookbook.jpg"}
                     className="img-fluid blur-up lazyload bg-img"
                     alt=""
                   />
                 </div>
                 <LookBookDot
-                  img={'/assets/images/pro3/2.jpg'}
+                  img={"/assets/images/pro3/2.jpg"}
                   num={"1"}
                   title="tee"
                   details="details"
@@ -51,7 +51,7 @@ const Lookbook = () => {
                   link="#"
                 />
                 <LookBookDot
-                  img={'/assets/images/pro3/1.jpg'}
+                  img={"/assets/images/pro3/1.jpg"}
                   num={"2"}
                   title="tee"
                   details="details"
@@ -65,13 +65,13 @@ const Lookbook = () => {
               <div className="lookbook-block">
                 <div>
                   <Media
-                    src={'/assets/images/lookbook2.jpg'}
+                    src={"/assets/images/lookbook2.jpg"}
                     className="img-fluid blur-up lazyload bg-img"
                     alt=""
                   />
                 </div>
                 <LookBookDot
-                  img={'/assets/images/pro3/27.jpg'}
+                  img={"/assets/images/pro3/27.jpg"}
                   num={"1"}
                   title="tee"
                   details="details"
@@ -80,7 +80,7 @@ const Lookbook = () => {
                   link="#"
                 />
                 <LookBookDot
-                  img={'/assets/images/pro3/28.jpg'}
+                  img={"/assets/images/pro3/28.jpg"}
                   num={"2"}
                   title="tee"
                   details="details"

@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import { Col, Container, Media, Row } from "reactstrap";
 import { useQuery } from "@apollo/client";
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 import PostLoader from "../PostLoader";
 import { CurrencyContext } from "../../../helpers/Currency/CurrencyContext";
 import { useRouter } from "next/router";
@@ -39,7 +39,13 @@ const GET_PRODUCTS = gql`
   }
 `;
 
-const TabContent = ({ data, loading, startIndex, endIndex,clickProductDetail}) => {
+const TabContent = ({
+  data,
+  loading,
+  startIndex,
+  endIndex,
+  clickProductDetail,
+}) => {
   const curContext = useContext(CurrencyContext);
   const currency = curContext.state;
   return (

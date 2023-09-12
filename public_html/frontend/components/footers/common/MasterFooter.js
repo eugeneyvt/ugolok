@@ -91,18 +91,21 @@ const MasterFooter = ({
                 <div
                   className={`footer-title ${
                     isOpen && collapse == 1 ? "active" : ""
-                  } footer-mobile-title`}>
+                  } footer-mobile-title`}
+                >
                   <h4
                     onClick={() => {
                       setCollapse(1);
                       setIsOpen(!isOpen);
-                    }}>
+                    }}
+                  >
                     about
                     <span className="according-menu"></span>
                   </h4>
                 </div>
                 <Collapse
-                  isOpen={width ? (collapse === 1 ? isOpen : false) : true}>
+                  isOpen={width ? (collapse === 1 ? isOpen : false) : true}
+                >
                   <div className="footer-contant">
                     <div className="footer-logo">
                       <LogoImage logo={logoName} />
@@ -118,14 +121,16 @@ const MasterFooter = ({
                           <a href="https://www.facebook.com" target="_blank">
                             <i
                               className="fa fa-facebook"
-                              aria-hidden="true"></i>
+                              aria-hidden="true"
+                            ></i>
                           </a>
                         </li>
                         <li>
                           <a href="https://plus.google.com" target="_blank">
                             <i
                               className="fa fa-google-plus"
-                              aria-hidden="true"></i>
+                              aria-hidden="true"
+                            ></i>
                           </a>
                         </li>
                         <li>
@@ -137,7 +142,8 @@ const MasterFooter = ({
                           <a href="https://www.instagram.com" target="_blank">
                             <i
                               className="fa fa-instagram"
-                              aria-hidden="true"></i>
+                              aria-hidden="true"
+                            ></i>
                           </a>
                         </li>
                         <li>
@@ -155,20 +161,23 @@ const MasterFooter = ({
                   <div
                     className={`footer-title ${
                       isOpen && collapse == 2 ? "active" : ""
-                    } `}>
+                    } `}
+                  >
                     <h4
                       onClick={() => {
                         if (width) {
                           setIsOpen(!isOpen);
                           setCollapse(2);
                         } else setIsOpen(true);
-                      }}>
+                      }}
+                    >
                       my account
                       <span className="according-menu"></span>
                     </h4>
                   </div>
                   <Collapse
-                    isOpen={width ? (collapse === 2 ? isOpen : false) : true}>
+                    isOpen={width ? (collapse === 2 ? isOpen : false) : true}
+                  >
                     <div className="footer-contant">
                       <ul>
                         <li>
@@ -209,20 +218,23 @@ const MasterFooter = ({
                   <div
                     className={`footer-title ${
                       isOpen && collapse == 3 ? "active" : ""
-                    } `}>
+                    } `}
+                  >
                     <h4
                       onClick={() => {
                         if (width) {
                           setIsOpen(!isOpen);
                           setCollapse(3);
                         } else setIsOpen(true);
-                      }}>
+                      }}
+                    >
                       why we choose
                       <span className="according-menu"></span>
                     </h4>
                   </div>
                   <Collapse
-                    isOpen={width ? (collapse === 3 ? isOpen : false) : true}>
+                    isOpen={width ? (collapse === 3 ? isOpen : false) : true}
+                  >
                     <div className="footer-contant">
                       <ul>
                         <li>
@@ -250,20 +262,23 @@ const MasterFooter = ({
                   <div
                     className={`footer-title ${
                       isOpen && collapse == 4 ? "active" : ""
-                    } `}>
+                    } `}
+                  >
                     <h4
                       onClick={() => {
                         if (width) {
                           setIsOpen(!isOpen);
                           setCollapse(4);
                         } else setIsOpen(true);
-                      }}>
+                      }}
+                    >
                       store information
                       <span className="according-menu"></span>
                     </h4>
                   </div>
                   <Collapse
-                    isOpen={width ? (collapse === 4 ? isOpen : false) : true}>
+                    isOpen={width ? (collapse === 4 ? isOpen : false) : true}
+                  >
                     <div className="footer-contant">
                       <ul className="contact-list">
                         <li>

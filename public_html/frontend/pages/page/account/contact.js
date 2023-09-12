@@ -78,7 +78,9 @@ const Contact = () => {
               <Form className="theme-form">
                 <Row>
                   <Col md="6">
-                    <Label className="form-label" for="name">First Name</Label>
+                    <Label className="form-label" for="name">
+                      First Name
+                    </Label>
                     <Input
                       type="text"
                       className="form-control"
@@ -88,7 +90,9 @@ const Contact = () => {
                     />
                   </Col>
                   <Col md="6">
-                    <Label className="form-label" for="email">Last Name</Label>
+                    <Label className="form-label" for="email">
+                      Last Name
+                    </Label>
                     <Input
                       type="email"
                       className="form-control"
@@ -98,7 +102,9 @@ const Contact = () => {
                     />
                   </Col>
                   <Col md="6">
-                    <Label className="form-label" for="review">Phone number</Label>
+                    <Label className="form-label" for="review">
+                      Phone number
+                    </Label>
                     <Input
                       type="text"
                       className="form-control"
@@ -108,7 +114,9 @@ const Contact = () => {
                     />
                   </Col>
                   <Col md="6">
-                    <Label className="form-label" for="email">Email</Label>
+                    <Label className="form-label" for="email">
+                      Email
+                    </Label>
                     <Input
                       type="email"
                       className="form-control"
@@ -118,7 +126,9 @@ const Contact = () => {
                     />
                   </Col>
                   <Col md="12">
-                    <Label className="form-label" for="review">Write Your Message</Label>
+                    <Label className="form-label" for="review">
+                      Write Your Message
+                    </Label>
                     <textarea
                       className="form-control"
                       placeholder="Write Your Message"

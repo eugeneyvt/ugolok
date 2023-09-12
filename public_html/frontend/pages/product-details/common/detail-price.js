@@ -51,7 +51,9 @@ const DetailsWithPrice = ({ item, stickyClass, changeColorVar }) => {
             {uniqueColor.some((vari) => vari.color) ? (
               <ul className="color-variant">
                 {uniqueColor.map((vari, i) => {
-                  return <li className={vari.color} key={i} title={vari.color}></li>;
+                  return (
+                    <li className={vari.color} key={i} title={vari.color}></li>
+                  );
                 })}
               </ul>
             ) : (
@@ -63,7 +65,14 @@ const DetailsWithPrice = ({ item, stickyClass, changeColorVar }) => {
             {uniqueColor.some((vari) => vari.color) ? (
               <ul className="color-variant">
                 {uniqueColor.map((vari, i) => {
-                  return <li className={vari.color} key={i} title={vari.color} onClick={() => changeColorVar(i)}></li>;
+                  return (
+                    <li
+                      className={vari.color}
+                      key={i}
+                      title={vari.color}
+                      onClick={() => changeColorVar(i)}
+                    ></li>
+                  );
                 })}
               </ul>
             ) : (
@@ -79,15 +88,26 @@ const DetailsWithPrice = ({ item, stickyClass, changeColorVar }) => {
                   <h6 className="product-title size-text">
                     select size
                     <span>
-                      <a href={null} data-toggle="modal" data-target="#sizemodal" onClick={toggle}>
+                      <a
+                        href={null}
+                        data-toggle="modal"
+                        data-target="#sizemodal"
+                        onClick={toggle}
+                      >
                         size chart
                       </a>
                     </span>
                   </h6>
                   <Modal isOpen={modal} toggle={toggle} centered>
-                    <ModalHeader toggle={toggle}>Sheer Straight Kurta</ModalHeader>
+                    <ModalHeader toggle={toggle}>
+                      Sheer Straight Kurta
+                    </ModalHeader>
                     <ModalBody>
-                      <Media src={sizeChart.src} alt="size" className="img-fluid" />
+                      <Media
+                        src={sizeChart.src}
+                        alt="size"
+                        className="img-fluid"
+                      />
                     </ModalBody>
                   </Modal>
                   <div className="size-box">
@@ -114,13 +134,31 @@ const DetailsWithPrice = ({ item, stickyClass, changeColorVar }) => {
           <div className="qty-box">
             <div className="input-group">
               <span className="input-group-prepend">
-                <button type="button" className="btn quantity-left-minus" onClick={minusQty} data-type="minus" data-field="">
+                <button
+                  type="button"
+                  className="btn quantity-left-minus"
+                  onClick={minusQty}
+                  data-type="minus"
+                  data-field=""
+                >
                   <i className="fa fa-angle-left"></i>
                 </button>
               </span>
-              <Input type="text" name="quantity" value={quantity} onChange={changeQty} className="form-control input-number" />
+              <Input
+                type="text"
+                name="quantity"
+                value={quantity}
+                onChange={changeQty}
+                className="form-control input-number"
+              />
               <span className="input-group-prepend">
-                <button type="button" className="btn quantity-right-plus" onClick={() => plusQty(product)} data-type="plus" data-field="">
+                <button
+                  type="button"
+                  className="btn quantity-right-plus"
+                  onClick={() => plusQty(product)}
+                  data-type="plus"
+                  data-field=""
+                >
                   <i className="fa fa-angle-right"></i>
                 </button>
               </span>
@@ -128,10 +166,18 @@ const DetailsWithPrice = ({ item, stickyClass, changeColorVar }) => {
           </div>
         </div>
         <div className="product-buttons">
-          <a href={null} className="btn btn-solid" onClick={() => context.addToCart(product, quantity)}>
+          <a
+            href={null}
+            className="btn btn-solid"
+            onClick={() => context.addToCart(product, quantity)}
+          >
             add to cart
           </a>
-          <Link href={`/page/account/checkout`} className="btn btn-solid" onClick={() => context.addToCart(product, quantity)}>
+          <Link
+            href={`/page/account/checkout`}
+            className="btn btn-solid"
+            onClick={() => context.addToCart(product, quantity)}
+          >
             buy now
           </Link>
         </div>

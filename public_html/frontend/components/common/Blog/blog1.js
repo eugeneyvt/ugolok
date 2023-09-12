@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import Slider from "react-slick";
 import Link from "next/link";
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 import { useQuery } from "@apollo/client";
 import { Slider3 } from "../../../services/script";
 import { Media, Container, Row, Col } from "reactstrap";
@@ -41,7 +41,10 @@ const BlogSection = ({ type, sectionClass, title, inner, hrClass }) => {
                   </div>
                 )}
               </div>
-              <Slider {...Slider3} className="slide-3 no-arrow slick-default-margin">
+              <Slider
+                {...Slider3}
+                className="slide-3 no-arrow slick-default-margin"
+              >
                 {data &&
                   data.blog.map((item, index) => (
                     <Col md="12" key={index}>

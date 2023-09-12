@@ -9,7 +9,7 @@ const Data = [
   {
     class: "parallax-banner4",
     yr: "2023",
-    left:true,
+    left: true,
     title: "fashion trends",
     offer: "special offer",
   },
@@ -21,7 +21,7 @@ const Data = [
   },
   {
     class: "parallax-banner6",
-    left:true,
+    left: true,
     yr: "2023",
     title: "top trends",
     offer: "special offer",
@@ -38,7 +38,9 @@ const Section = ({ classes, yr, title, offer, left }) => {
   return (
     <section className="p-0">
       <div
-        className={`full-banner parallax-layout parallax text-center ${left?'p-left': ' p-right'} ${classes}`}
+        className={`full-banner parallax-layout parallax text-center ${
+          left ? "p-left" : " p-right"
+        } ${classes}`}
       >
         <div className="container">
           <div className="row">

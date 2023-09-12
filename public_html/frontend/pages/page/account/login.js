@@ -16,13 +16,25 @@ const Login = () => {
                     <Label className="form-label" for="email">
                       Email
                     </Label>
-                    <Input type="email" className="form-control" id="email" placeholder="Email" required="" />
+                    <Input
+                      type="email"
+                      className="form-control"
+                      id="email"
+                      placeholder="Email"
+                      required=""
+                    />
                   </div>
                   <div className="form-group">
                     <Label className="form-label" for="review">
                       Password
                     </Label>
-                    <Input type="password" className="form-control" id="review" placeholder="Enter your password" required="" />
+                    <Input
+                      type="password"
+                      className="form-control"
+                      id="review"
+                      placeholder="Enter your password"
+                      required=""
+                    />
                   </div>
                   <a href="#" className="btn btn-solid">
                     Login
@@ -34,7 +46,11 @@ const Login = () => {
               <h3>New Customer</h3>
               <div className="theme-card authentication-right">
                 <h6 className="title-font">Create A Account</h6>
-                <p>Sign up for a free account at our store. Registration is quick and easy. It allows you to be able to order from our shop. To start shopping click register.</p>
+                <p>
+                  Sign up for a free account at our store. Registration is quick
+                  and easy. It allows you to be able to order from our shop. To
+                  start shopping click register.
+                </p>
                 <a href="#" className="btn btn-solid">
                   Create an Account
                 </a>

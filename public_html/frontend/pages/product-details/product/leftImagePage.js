@@ -91,11 +91,21 @@ const LeftImagePage = () => {
             <Row className="leftImage">
               <Col lg="1" sm="2" xs="12" className="order-down">
                 <Row>
-                  <Slider className="slider-nav" {...productsnav} asNavFor={nav1} ref={(slider) => (slider2.current = slider)}>
+                  <Slider
+                    className="slider-nav"
+                    {...productsnav}
+                    asNavFor={nav1}
+                    ref={(slider) => (slider2.current = slider)}
+                  >
                     {data.product.variants
                       ? data.product.images.map((vari, index) => (
                           <div key={index}>
-                            <Media src={`${vari.src}`} key={index} alt={vari.alt} className="img-fluid" />
+                            <Media
+                              src={`${vari.src}`}
+                              key={index}
+                              alt={vari.alt}
+                              className="img-fluid"
+                            />
                           </div>
                         ))
                       : ""}
@@ -103,7 +113,12 @@ const LeftImagePage = () => {
                 </Row>
               </Col>
               <Col lg="5" sm="10" xs="12" className="order-up">
-                <Slider {...products} asNavFor={nav2} ref={(slider) => (slider1.current = slider)} className="product-right-slick">
+                <Slider
+                  {...products}
+                  asNavFor={nav2}
+                  ref={(slider) => (slider1.current = slider)}
+                  className="product-right-slick"
+                >
                   {data.product.variants
                     ? data.product.images.map((vari, index) => (
                         <div key={index}>
@@ -119,7 +134,13 @@ const LeftImagePage = () => {
                 </Slider>
               </Col>
               <Col lg="6" className="rtl-text">
-                <DetailsWithPrice symbol={symbol} item={data.product} changeColorVar={changeColorVar} navOne={state.nav1} addToCartClicked={addToCart} />
+                <DetailsWithPrice
+                  symbol={symbol}
+                  item={data.product}
+                  changeColorVar={changeColorVar}
+                  navOne={state.nav1}
+                  addToCartClicked={addToCart}
+                />
               </Col>
             </Row>
           )}

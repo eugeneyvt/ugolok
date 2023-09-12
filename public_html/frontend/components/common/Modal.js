@@ -35,8 +35,7 @@ const ModalComponent = () => {
                   data-dismiss="modal"
                   aria-label="Close"
                   onClick={toggle}
-                >
-                </Button>
+                ></Button>
                 <div className="offer-content">
                   <Media
                     src={offerBanner.src}

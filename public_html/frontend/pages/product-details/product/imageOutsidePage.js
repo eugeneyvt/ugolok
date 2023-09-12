@@ -120,7 +120,8 @@ const OutsideImagePage = () => {
                   {...products}
                   asNavFor={nav2}
                   ref={(slider) => (slider1.current = slider)}
-                  className="product-right-slick">
+                  className="product-right-slick"
+                >
                   {data.product.variants
                     ? data.product.images.map((vari, index) => (
                         <div key={index}>
@@ -170,7 +171,8 @@ const OutsideImagePage = () => {
                                 className={vari.color}
                                 key={i}
                                 title={vari.color}
-                                onClick={() => changeColorVar(i)}></li>
+                                onClick={() => changeColorVar(i)}
+                              ></li>
                             );
                           })}
                         </ul>
@@ -187,7 +189,8 @@ const OutsideImagePage = () => {
                                   href={null}
                                   data-toggle="modal"
                                   data-target="#sizemodal"
-                                  onClick={toggle}>
+                                  onClick={toggle}
+                                >
                                   size chart
                                 </a>
                               </span>
@@ -229,7 +232,8 @@ const OutsideImagePage = () => {
                                 className="btn quantity-left-minus"
                                 onClick={minusQty}
                                 data-type="minus"
-                                data-field="">
+                                data-field=""
+                              >
                                 <i className="fa fa-angle-left"></i>
                               </button>
                             </span>
@@ -246,7 +250,8 @@ const OutsideImagePage = () => {
                                 className="btn quantity-right-plus"
                                 onClick={() => plusQty(data.product)}
                                 data-type="plus"
-                                data-field="">
+                                data-field=""
+                              >
                                 <i className="fa fa-angle-right"></i>
                               </button>
                             </span>
@@ -257,12 +262,14 @@ const OutsideImagePage = () => {
                         <a
                           href={null}
                           className="btn btn-solid"
-                          onClick={() => addToCart(data.product, quantity)}>
+                          onClick={() => addToCart(data.product, quantity)}
+                        >
                           add to cart
                         </a>
                         <Link
                           href={`/page/account/checkout`}
-                          className="btn btn-solid">
+                          className="btn btn-solid"
+                        >
                           {/* <a  onClick={() => BuynowClicked(item, quantity)}> */}
                           buy now
                         </Link>
@@ -278,7 +285,8 @@ const OutsideImagePage = () => {
                             <li>
                               <a
                                 href="https://www.facebook.com"
-                                target="_blank">
+                                target="_blank"
+                              >
                                 <i className="fa fa-facebook"></i>
                               </a>
                             </li>
@@ -295,7 +303,8 @@ const OutsideImagePage = () => {
                             <li>
                               <a
                                 href="https://www.instagram.com"
-                                target="_blank">
+                                target="_blank"
+                              >
                                 <i className="fa fa-instagram"></i>
                               </a>
                             </li>
@@ -310,7 +319,8 @@ const OutsideImagePage = () => {
                     <Modal open={open} onClose={onCloseModal} center>
                       <div
                         className="modal-dialog modal-dialog-centered"
-                        role="document">
+                        role="document"
+                      >
                         <div className="modal-content">
                           <ModalHeader className="modal-header">
                             <h5 className="modal-title" id="exampleModalLabel">
@@ -332,7 +342,8 @@ const OutsideImagePage = () => {
                         className="slider-nav"
                         {...productsnav}
                         asNavFor={nav1}
-                        ref={(slider) => (slider2.current = slider)}>
+                        ref={(slider) => (slider2.current = slider)}
+                      >
                         {data.product.variants
                           ? data.product.images.map((vari, index) => (
                               <div key={index}>

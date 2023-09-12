@@ -38,12 +38,7 @@ const Service = () => {
         <Row className="partition4">
           {Data.map((data, index) => {
             return (
-              <Col
-                lg="3"
-                xs="6"
-                className={`service-block1`}
-                key={index}
-              >
+              <Col lg="3" xs="6" className={`service-block1`} key={index}>
                 <MasterServiceContent
                   title={data.title}
                   link={data.link}

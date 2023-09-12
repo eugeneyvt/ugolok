@@ -2,7 +2,7 @@ import React, { Fragment, useState, useContext } from "react";
 import { Container, Row, Col, Media } from "reactstrap";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { useQuery } from "@apollo/client";
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 import PostLoader from "../PostLoader";
 import { CurrencyContext } from "../../../helpers/Currency/CurrencyContext";
 

@@ -73,9 +73,9 @@ const HeaderSix = ({ logoName, direction }) => {
                                 alt=""
                               />
                               <i
-                              className="fa fa-search"
-                              onClick={openSearch}
-                            ></i>
+                                className="fa fa-search"
+                                onClick={openSearch}
+                              ></i>
                             </div>
                           </li>
                           <Currency icon={settings.src} />

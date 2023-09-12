@@ -155,7 +155,9 @@ const Typography = () => {
                   <form>
                     <div className="form-row">
                       <div className="col-12 mb-3">
-                        <label className="form-label" htmlFor="name">First Name</label>
+                        <label className="form-label" htmlFor="name">
+                          First Name
+                        </label>
                         <input
                           type="text"
                           className="form-control"
@@ -165,7 +167,9 @@ const Typography = () => {
                         />
                       </div>
                       <div className="col-12 mb-3">
-                        <label className="form-label" htmlFor="email">Email</label>
+                        <label className="form-label" htmlFor="email">
+                          Email
+                        </label>
                         <input
                           type="email"
                           className="form-control"

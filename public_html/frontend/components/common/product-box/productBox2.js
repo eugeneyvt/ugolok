@@ -146,7 +146,8 @@ const ProductItem = ({
                 className={`grid_thumb_img ${
                   img.src === image ? "active" : ""
                 }`}
-                key={i}>
+                key={i}
+              >
                 <a href={null} title="Add to Wishlist">
                   <Media
                     src={`${img.src}`}
@@ -174,7 +175,8 @@ const ProductItem = ({
         toggle={toggle}
         className="modal-lg quickview-modal"
         centered
-        size="lg">
+        size="lg"
+      >
         <ModalBody>
           <Row>
             <Col lg="6" xs="12">
@@ -210,7 +212,8 @@ const ProductItem = ({
                                   vari.image_id,
                                   product.images
                                 )
-                              }></li>
+                              }
+                            ></li>
                           );
                         })}
                       </ul>
@@ -250,7 +253,8 @@ const ProductItem = ({
                           className="btn quantity-left-minus"
                           onClick={minusQty}
                           data-type="minus"
-                          data-field="">
+                          data-field=""
+                        >
                           <i className="fa fa-angle-left"></i>
                         </button>
                       </span>
@@ -267,7 +271,8 @@ const ProductItem = ({
                           className="btn quantity-right-plus"
                           onClick={() => plusQty(product)}
                           data-type="plus"
-                          data-field="">
+                          data-field=""
+                        >
                           <i className="fa fa-angle-right"></i>
                         </button>
                       </span>
@@ -277,12 +282,14 @@ const ProductItem = ({
                 <div className="product-buttons">
                   <button
                     className="btn btn-solid"
-                    onClick={() => addCart(product, quantity)}>
+                    onClick={() => addCart(product, quantity)}
+                  >
                     add to cart
                   </button>
                   <button
                     className="btn btn-solid"
-                    onClick={clickProductDetail}>
+                    onClick={clickProductDetail}
+                  >
                     View detail
                   </button>
                 </div>

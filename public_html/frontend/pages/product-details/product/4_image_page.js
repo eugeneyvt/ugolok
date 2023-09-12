@@ -5,7 +5,7 @@ import imageThree from "../../../public/assets/images/fashion/pro/003.jpg";
 import imageFour from "../../../public/assets/images/fashion/pro/004.jpg";
 import DetailsWithPrice from "../common/detail-price";
 import { Col, Container, Row } from "reactstrap";
-import { gql ,useQuery } from "@apollo/client";
+import { gql, useQuery } from "@apollo/client";
 
 const GET_SINGLE_PRODUCTS = gql`
   query product($id: Int!) {

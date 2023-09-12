@@ -16,7 +16,7 @@ const Category = () => {
         <Row className="partition1">
           {bagTypes.map((type, i) => (
             <Col key={i}>
-              <a  href="#" className="btn btn-outline d-block w-100">
+              <a href="#" className="btn btn-outline d-block w-100">
                 {type}
               </a>
             </Col>

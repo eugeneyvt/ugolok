@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { TabList, TabPanel, Tabs, Tab } from "react-tabs";
 import { Col, Container, Row } from "reactstrap";
 import { useQuery } from "@apollo/client";
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 import ProductItem from "../product-box/ProductBox6";
 import CartContext from "../../../helpers/cart/index";
 import { WishlistContext } from "../../../helpers/wishlist/WishlistContext";
