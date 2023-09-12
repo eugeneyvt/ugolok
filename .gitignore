@@ -7,9 +7,9 @@
 !.gitignore
 
 # Ignore node_modules and .next inside public_html
-/public_html/node_modules/
-/public_html/.next/
+/public_html/frontend/node_modules/
+/public_html/frontend/.next/
 
 # Ignore node_modules and .next inside domains
-/domains/node_modules/
-/domains/.next/
+/domains/api.ugolok.shop/API/node_modules/
+/domains/api.ugolok.shop/API/.next/
