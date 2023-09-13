@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Use SSH to connect to your server and deploy
-ssh -i "$DEPLOY_PRIVATE_KEY" $DEPLOY_USER@$DEPLOY_HOST <<EOF
+ssh -i "$PRIVATE_KEY" $USER@$HOST <<EOF
   # Pull updates
   cd /home/ugolok
   git pull origin main
