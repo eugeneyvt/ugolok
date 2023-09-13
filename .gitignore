@@ -13,5 +13,5 @@
 /public_html/frontend/.next/
 
 # Ignore node_modules and .next inside domains
-/domains/api.ugolok.shop/API/node_modules/
-/domains/api.ugolok.shop/API/.next/
+/domains/api.ugolok.shop/public_html/API/node_modules/
+/domains/api.ugolok.shop/public_html/API/.next/
