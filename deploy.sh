@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# Fetch secrets from environment variables
-HOST=${DEPLOY_HOST}
-PRIVATE_KEY=${DEPLOY_PRIVATE_KEY}
-USER=${DEPLOY_USER}
-
 # Use SSH to connect to your server and deploy
 ssh -i "$PRIVATE_KEY" $USER@$HOST <<EOF
   # Pull updates
