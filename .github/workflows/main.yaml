@@ -3,7 +3,7 @@ name: CI/CD Pipeline
 on:
   push:
     branches: [ main ]
-    workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   build:
@@ -15,13 +15,31 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '14'  # Set to your desired Node.js version
+        node-version: '20'  # Set to your desired Node.js version
 
-    - name: Install dependencies
+   # Handling front
+    - name: Change to front directory
+      run: cd public_html/frontend
+
+    - name: Install dependencies for front
       run: npm install
+      working-directory: ./public_html/frontend
 
-    - name: Run tests
+    - name: Run tests for front
       run: npm test
+      working-directory: ./public_html/frontend
+
+   # Handling api
+    - name: Change to api
+      run: cd domains/api.ugolok.shop/public_html/API
+
+    - name: Install dependencies for api
+      run: npm install
+      working-directory: ./domains/api.ugolok.shop/public_html/API
+
+    - name: Run tests for api
+      run: npm test
+      working-directory: ./domains/api.ugolok.shop/public_html/API
 
     - name: Deploy to server
       if: success()
