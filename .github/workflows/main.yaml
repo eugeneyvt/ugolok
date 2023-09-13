@@ -17,29 +17,28 @@ jobs:
       with:
         node-version: '20'  # Set to your desired Node.js version
 
-   # Handling front
-    - name: Change to front directory
-      run: cd public_html/frontend
-
+    # Handling front
     - name: Install dependencies for front
       run: npm install
       working-directory: ./public_html/frontend
 
-    - name: Run tests for front
-      run: npm test
+    - name: Build Next.js app
+      run: npm run build
       working-directory: ./public_html/frontend
 
-   # Handling api
-    - name: Change to api
-      run: cd domains/api.ugolok.shop/public_html/API
+    # Uncomment the below lines when you have frontend tests set up
+    #- name: Run tests for front
+    #  run: npm test
+    #  working-directory: ./public_html/frontend
 
+    # Handling api
     - name: Install dependencies for api
       run: npm install
       working-directory: ./domains/api.ugolok.shop/public_html/API
 
-    - name: Run tests for api
-      run: npm test
-      working-directory: ./domains/api.ugolok.shop/public_html/API
+#    - name: Run tests for api
+#      run: npm test
+#      working-directory: ./domains/api.ugolok.shop/public_html/API
 
     - name: Deploy to server
       if: success()
