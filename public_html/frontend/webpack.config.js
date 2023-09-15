@@ -3,7 +3,7 @@ module.exports = {
     contentBase: "./app",
     compress: true,
     proxy: {
-      "/graphql": {
+      "/graphql/": {
         target: process.env.API_URL,
         secure: false,
       },
