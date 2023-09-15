@@ -6,6 +6,8 @@
 !/domains/
 !.github
 !/saleor/
+!.gitignore
+!deploy.sh
 
 # Ignore node_modules and .next inside public_html
 /public_html/frontend/node_modules/
