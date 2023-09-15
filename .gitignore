@@ -4,7 +4,6 @@
 # Allow these directories
 !/public_html/
 !/domains/
-!deploy.sh
 !.github
 !/saleor/
 
