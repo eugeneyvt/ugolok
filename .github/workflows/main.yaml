@@ -18,13 +18,13 @@ jobs:
         node-version: '20'  # Set to your desired Node.js version
 
     # Handling front
-    - name: Install dependencies for front
-      run: npm install
-      working-directory: ./public_html/frontend
+   # - name: Install dependencies for front
+    #  run: npm install
+     # working-directory: ./public_html/frontend
 
-    - name: Build Next.js app
-      run: npm run build
-      working-directory: ./public_html/frontend
+#    - name: Build Next.js app
+ #     run: npm run build
+  #    working-directory: ./public_html/frontend
 
     # Uncomment the below lines when you have frontend tests set up
     #- name: Run tests for front
