@@ -10,8 +10,8 @@
 !deploy.sh
 
 # Ignore node_modules and .next inside public_html
-#/public_html/frontend/node_modules/
-!/public_html/frontend/.next/
+/public_html/frontend/node_modules/
+#/public_html/frontend/.next/
 
 # Ignore node_modules and .next inside domains
 /domains/api.ugolok.shop/public_html/API/node_modules/
