@@ -32,9 +32,9 @@ jobs:
     #  working-directory: ./public_html/frontend
 
     # Handling api
-    - name: Install dependencies for api
-      run: npm install
-      working-directory: ./domains/api.ugolok.shop/public_html/API
+#    - name: Install dependencies for api
+#      run: npm install
+#      working-directory: ./domains/api.ugolok.shop/public_html/API
 
 #    - name: Run tests for api
 #      run: npm test
